@@ -1,0 +1,29 @@
+footer {
+  padding: 100px 0;
+  background-color: #262f36;
+  color: white;
+}
+
+footer .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+section[class="col-md-12 col-lg-6 my-5 ml-lg-5"] p {
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -o-max-content;
+  width: -ms-max-content;
+}
+
+div[class="list-group"] {
+  /* min-width: 130px; */
+  word-break: break-all;
+}
+
+@media screen and (min-width: 768px) {
+
+.list-group {
+            display:block;
+      }  
+}

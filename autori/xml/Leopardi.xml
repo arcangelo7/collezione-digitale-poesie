@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<TEI>
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Canti, Ad Angelo Mai, strofe 5 e 11: un'edizione digitale</title>
+            <author>Giacomo Leopardi</author>
+         </titleStmt>
+         <extent>10 KB</extent>
+         <publicationStmt>
+            <distributor>Alma Mater Studiorum</distributor>
+            <pubPlace>Bologna</pubPlace>
+            <address>
+               <street>Via Zamboni 33</street>
+               <postCode>40126</postCode>
+            </address>
+            <date>2019-08-15</date>
+            <availability>
+               <p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni
+                  uso commerciale è vietato.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Tutte le opere</title>
+                  <author>Giacomo Leopardi</author>
+                  <editor role="curatore">Felici, Lucio</editor>
+                  <imprint>
+                     <pubPlace>Roma</pubPlace>
+                     <publisher>Lexis Progetti Editoriali</publisher>
+                     <date when="1998">1998</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <interpretation>
+              <p>Studio del lessico attinente alla natura</p>
+              <p>Studio dei riferimenti spaziali e temporali</p>
+              <p>Studio dei personaggi</p>
+           </interpretation>
+        </editorialDecl>
+        <projectDesc>
+           <p>Arricchire il testo di metainformazioni e visualizzarle, in particolare per quanto riguarda il lessico, i personaggi, il tempo e lo spazio.</p>
+        </projectDesc>
+        <tagsDecl>
+           <namespace name="http://www.tei-c.org/ns/1.0"><!--Inserire a posteriori i tag usati e le occurs="" -->
+              <tagUsage gi="lg">Marca un gruppo di versi, inteso sia come intera poesia che come singola strofa</tagUsage>
+              <tagUsage gi="head">Marca il titolo della singola poesia</tagUsage>
+              <tagUsage gi="l">Marca il singolo verso</tagUsage>
+              <tagUsage gi="name">Marca il lessico della natura e i nomi di persona. Per ulteriori specificazioni vedi la Reference System Declaration</tagUsage>
+              <tagUsage gi="placeName">Marca il nome di un luogo e contiene il tag settlement</tagUsage>
+              <tagUsage gi="settlement">Marca il tipo di luogo, ad esempio una città, ed è contenuto dal tag placeName</tagUsage>
+           </namespace>
+        </tagsDecl>
+        <refsDecl><!--Aggiungere a posteriori-->
+           <p>I versi delle strofe e le strofe stesse sono numerate con l'attributo <att>n</att></p>
+           <p>Il lessico del mondo naturale minerale è indicato dal valore <val>mineralNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale mitologico è indicato dal valore <val>mythNature</val> dell'attributo <att>type</att></p>
+           <p>Il nome di una città è segnalato dal valore <val>città</val> dell'attributo <att>type</att></p>
+        </refsDecl>
+     </encodingDesc>
+     <profileDesc>
+        <creation>La canzone è stata composta nel <date when="1820">1820</date> a <placeName><settlement type="city">Recanati</settlement></placeName></creation>
+        <langUsage>
+           <language ident="it">Italiano</language>
+        </langUsage>
+        <particDesc>
+           <listPerson>
+              <person>
+                 <persName xml:id="DANT">
+                    <forename>Dante</forename>
+                    <surname>Alighieri</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="PETR">
+                    <forename>Francesco</forename>
+                    <surname>Petrarca</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="ALFI">
+                    <forename>Vittorio</forename>
+                    <surname>Alfieri</surname>
+                 </persName>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+     <revisionDesc>
+        <change when=""></change>
+     </revisionDesc>
+  </teiHeader>
+   <text xml:lang="it">
+      <body>
+         <head>Ad Angelo Mai, strofe 5 e 11</head>
+         <lg type="strofa" n="5">
+            <l n="61">Eran calde le tue ceneri sante, </l>
+            <l><name ref="#DANT">non domito nemico</name> </l>
+            <l>della fortuna, al cui sdegno e dolore </l>
+            <l>fu più l’<name type="mythNature">averno</name> che la terra amico. </l>
+            <l>L’averno: e qual non è parte migliore </l>
+            <l>di questa nostra? E le tue dolci corde </l>
+            <l>susurravano ancora </l>
+            <l>dal tocco di tua destra, o <name ref="#PETR">sfortunato</name> </l>
+            <l>amante. Ahi dal dolor comincia e nasce</l>
+            <l>l’italo canto. E pur men grava e morde </l>
+            <l>ll mal che n’addolora </l>
+            <l>del tedio che n’affoga. Oh te beato, </l>
+            <l>a cui fu vita il pianto! A noi le fasce </l>
+            <l>cinse il fastidio; a noi presso la culla </l>
+            <l>immoto siede, e su la tomba, il nulla. </l>
+         </lg>
+         <lg type="strofa" n="11">
+            <l n="151">Da te fino a quest’ora uom non è sorto, </l>
+            <l>o sventurato ingegno, </l>
+            <l>pari all’italo nome, altro ch’un solo, </l>
+            <l>solo di sua codarda etate indegno, </l>
+            <l><name ref="#ALFI">allobrogo feroce</name>, a cui dal polo </l>
+            <l>maschia virtú, non giá da questa mia </l>
+            <l>stanca ed <name type="mineralNature">arida terra</name>, </l>
+            <l>venne nel petto; onde, privato, inerme, </l>
+            <l>(memorando ardimento!) in su la scena</l>
+            <l>mosse guerra a’ tiranni: almen si dia </l>
+            <l>questa misera guerra </l>
+            <l>e questo vano campo all’ire inferme </l>
+            <l>del mondo. Ei primo e sol dentro all’arena </l>
+            <l>scese, e nullo il seguí, ché l’ozio e il brutto </l>
+            <l>silenzio or preme ai nostri innanzi a tutto. </l>
+         </lg>   
+      </body>
+  </text>
+</TEI>

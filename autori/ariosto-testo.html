@@ -1,0 +1,298 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Collezione digitale</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Home</a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              data-toggle="dropdown"
+            >
+              Autori
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="dante.html">Dante</a
+              ><a class="dropdown-item" href="petrarca.html">Petrarca</a
+              ><a class="dropdown-item active" href="ariosto.html">Ariosto</a
+              ><a class="dropdown-item" href="tasso.html">Tasso</a
+              ><a class="dropdown-item" href="foscolo.html">Foscolo</a
+              ><a class="dropdown-item" href="leopardi.html">Leopardi</a
+              ><a class="dropdown-item" href="manzoni.html">Manzoni</a
+              ><a class="dropdown-item" href="pascoli.html">Pascoli</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/geobrowser.html"
+              >Mappa e Timeline</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/voyant.html">Voyant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documentazione/documentazione.html">Documentazione</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="../index.html" title="Home">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="ariosto.html" title="Home">Scheda Ariosto</a>
+        </li>
+        <li class="breadcrumb-item active">Testo</li>
+      </ol>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="row">
+        <nav class="col-md-12 col-lg-3 my-5 ml-lg-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="lessico">Lessico</label>
+            </div>
+            <select class="custom-select" id="lessico" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="nazione">nazione</option
+              ><option value="tempo">tempo</option></select
+            >
+          </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="personaggi" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option>
+              <option value="ariosto">Ludovico Ariosto</option>
+              <option value="AGRA"> Agramante </option
+              ><option value="TROI"> Troiano </option
+              ><option value="CARL"> Carlo Magno </option
+              ><option value="ORLA"> Orlando </option
+              ><option value="BENU"> Alessandra Benucci </option
+              ><option value="ERCO"> Ercole I d'Este </option
+              ><option value="IPPO"> Ippolito d'Este </option
+              ><option value="RUGG">
+                Ruggiero
+              </option></select
+            >
+            <div class="input-group-append">
+              <label class="input-group-text" for="personaggi"
+                >Personaggi *</label
+              >
+            </div>
+          </div>
+          <p class="text-muted my-2">* Verranno evidenziati i versi in cui il personaggio viene nominato, è soggetto grammaticale o prende la parola.</p>
+        </nav>
+        <section class="col-md-12 col-lg-6 my-5 ml-lg-5">
+          <h1>Orlando Furioso, Proemio, vv. 1-32</h1>
+          <div id="testo">
+            <div class="my-5">
+              <p class="ariosto">
+                Le donne, i cavallier, l'arme, gli amori,
+                <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                le cortesie, l'audaci imprese io canto,
+                <span class="m-5"></span>
+              </p>
+              <p class="tempo">
+                che furo al tempo che passaro i Mori <span class="m-5"></span>
+              </p>
+              <p class="nazione">
+                d'Africa il mare, e in Francia nocquer tanto,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                seguendo l'ire e i giovenil furori <span class="m-5"></span>
+              </p>
+              <p class="AGRA">
+                d'Agramante lor re, che si di&egrave; vanto
+                <span class="m-5"></span>
+              </p>
+              <p class="AGRA TROI">
+                di vendicar la morte di Troiano <span class="m-5"></span>
+              </p>
+              <p class="AGRA CARL">
+                sopra re Carlo imperator romano. <span class="m-5">8</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="ariosto ORLA">
+                Dir&ograve; d'Orlando in un medesmo tratto
+                <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                cosa non detta in prosa mai n&eacute; in rima:
+                <span class="m-5"></span>
+              </p>
+              <p class="ORLA">
+                che per amor venne in furore e matto, <span class="m-5"></span>
+              </p>
+              <p class="ORLA">
+                d'uom che s&igrave; saggio era stimato prima;
+                <span class="m-5"></span>
+              </p>
+              <p class="BENU">
+                se da colei che tal quasi m'ha fatto, <span class="m-5"></span>
+              </p>
+              <p class="BENU">
+                che 'l poco ingegno ad or ad or mi lima,
+                <span class="m-5"></span>
+              </p>
+              <p class="BENU">
+                me ne sar&agrave; per&ograve; tanto concesso,
+                <span class="m-5"></span>
+              </p>
+              <p class="BENU">
+                che mi basti a finir quanto ho promesso. 
+                <span class="m-5">16</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="IPPO">
+                Piacciavi, generosa Erculea prole, <span class="m-5"></span>
+              </p>
+              <p class="tempo IPPO">
+                ornamento e splendor del secol nostro, <span class="m-5"></span>
+              </p>
+              <p class="IPPO ariosto">
+                Ippolito, aggradir questo che vuole <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                e darvi sol pu&ograve; l'umil servo vostro.
+                <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                Quel ch'io vi debbo, posso di parole <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                pagare in parte, e d'opera d'inchiostro;
+                <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                n&eacute; che poco io vi dia da imputar sono;
+                <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                che quanto io posso dar, tutto vi dono.
+                <span class="m-5">24</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="IPPO">
+                Voi sentirete fra i pi&ugrave; degni eroi,
+                <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                che nominar con laude m’apparecchio,
+                <span class="m-5"></span>
+              </p>
+              <p class="RUGG">
+                ricordar quel Ruggier, che fu di voi <span class="m-5"></span>
+              </p>
+              <p class="RUGG">
+                e de' vostri avi illustri il ceppo vecchio.
+                <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                L'alto valore e' chiari gesti suoi <span class="m-5"></span>
+              </p>
+              <p class="ariosto">
+                vi far&ograve; udir, se voi mi date orecchio,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                e vostri alti pensier cedino un poco, <span class="m-5"></span>
+              </p>
+              <p class="">
+                s&igrave; che tra lor miei versi abbiano loco.
+                <span class="m-5">32</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+         <div class="row">
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Alma Mater Studiorum<br>Scuola di Lettere e Beni Culturali</h6></li>
+               <li class="text-muted">Corso di Laurea Triennale in Lettere Moderne
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Valorizzare il sapere digitale:<br>un esperimento di progettazione</h6></li>
+               <li class="text-muted">Tesi di Laurea Triennale in Informatica Umanistica</li>
+               <li class="text-muted">Relatore: Prof.ssa Francesca Tomasi</li>
+               <li class="text-muted">Presentata da: Arcangelo Massari</li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Anno Accademico 2018/2019</h6></li>
+               <li class="text-muted">Sessione Seconda
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </footer>
+    <script>
+      function evidenzia() {
+        var lessicoSelezionato = $("#lessico").val();
+        var personaggioSelezionato = $("#personaggi").val();
+        $("p").css("background-color", "transparent");
+        if (lessicoSelezionato != "Scegli...") {
+          $("." + lessicoSelezionato).css("background-color", "#ccff99");
+        }
+        if (personaggioSelezionato != "Scegli...") {
+          $("." + personaggioSelezionato).css("background-color", "yellow");
+        }
+      }
+    </script>
+  </body>
+</html>

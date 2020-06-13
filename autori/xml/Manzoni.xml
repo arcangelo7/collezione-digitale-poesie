@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<TEI>
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Inni e Odi, Il cinque maggio, vv. 1-48: un'edizione digitale</title>
+            <author>Alessandro Manzoni</author>
+         </titleStmt>
+         <extent>10 KB</extent>
+         <publicationStmt>
+            <distributor>Alma Mater Studiorum</distributor>
+            <pubPlace>Bologna</pubPlace>
+            <address>
+               <street>Via Zamboni 33</street>
+               <postCode>40126</postCode>
+            </address>
+            <date>2019-08-16</date>
+            <availability>
+               <p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni
+                  uso commerciale è vietato.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Poesie</title>
+                  <author>Alessandro Manzoni</author>
+                  <editor role="curatore">Bacchelli, Riccardo</editor>
+                  <imprint>
+                     <pubPlace>Torino</pubPlace>
+                     <publisher>Einaudi</publisher>
+                     <date when="1976">1976</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <interpretation>
+              <p>Studio del lessico attinente alla natura</p>
+              <p>Studio dei riferimenti spaziali e temporali</p>
+              <p>Studio dei personaggi</p>
+           </interpretation>
+        </editorialDecl>
+        <projectDesc>
+           <p>Arricchire il testo di metainformazioni e visualizzarle, in particolare per quanto riguarda il lessico, i personaggi, il tempo e lo spazio.</p>
+        </projectDesc>
+        <tagsDecl>
+           <namespace name="http://www.tei-c.org/ns/1.0"><!--Inserire a posteriori i tag usati e le occurs="" -->
+              <tagUsage gi="lg">Marca un gruppo di versi, inteso sia come intera poesia che come singola strofa</tagUsage>
+              <tagUsage gi="head">Marca il titolo della singola poesia</tagUsage>
+              <tagUsage gi="l">Marca il singolo verso</tagUsage>
+              <tagUsage gi="name">Marca il lessico della natura e i nomi di persona. Per ulteriori specificazioni vedi la Reference System Declaration</tagUsage>
+              <tagUsage gi="placeName">Marca il nome di un luogo e contiene il tag settlement</tagUsage>
+              <tagUsage gi="settlement">Marca il tipo di luogo, ad esempio una città, ed è contenuto dal tag placeName</tagUsage>
+              <tagUsage gi="date">Marca una data</tagUsage>
+              <tagUsage gi="geogName">Marca un nome geografico</tagUsage>           
+           </namespace>
+        </tagsDecl>
+        <refsDecl><!--Aggiungere a posteriori-->
+           <p>I versi delle terzine sono numerati con l'attributo <att>n</att>, che ricorre ogni tre versi</p>
+           <p>Il lessico del mondo naturale minerale è indicato dal valore <val>mineralNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale marino è indicato dal valore <val>marineNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale celeste è indicato dal valore <val>celestialNature</val> dell'attributo <att>type</att></p>
+           <p>Il nome di una città è segnalato dal valore <val>città</val> dell'attributo <att>type</att></p>
+           <p>Ulteriori specificazioni sul tempo e sulle date sono forniti dall'indicazione del <val>tempo</val> data dall'attributo<att>when</att></p>
+           <p>Il nome di una catena montuosa è segnalato dal valore <val>mountains</val> dell`attributo <att>type</att></p>
+           <p>Il nome di un fiume è segnalato dal valore <val>river</val> dell`attributo <att>type</att></p>
+        </refsDecl>
+     </encodingDesc>
+     <profileDesc>
+        <creation><title>Il cinque maggio</title> venne composto tra il <date from="1821-07-18" to="1821-07-20">18-07-1821 e il 20-07-1821</date> a <placeName><settlement type="city">Milano</settlement></placeName>.</creation>
+        <langUsage>
+           <language ident="it">Italiano</language>
+        </langUsage>
+        <particDesc>
+           <listPerson>
+              <person>
+                 <persName xml:id="NAPO">
+                    <forename>Napoleone</forename>
+                    <surname>Bonaparte</surname>
+                 </persName>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+     <revisionDesc>
+        <change when="2019-07-02">Aggiunta di informazioni sulle finalità del progetto</change>
+     </revisionDesc>
+  </teiHeader>
+   <text xml:lang="it">
+      <body>
+         <head>Inni e Odi, Il cinque maggio, vv. 1-48</head>
+         <lg type="sestina">
+            <l><name ref="#NAPO">Ei</name> <date when="1821-05-05">fu</date>. Siccome immobile, </l>
+            <l>dato il mortal sospiro, </l>
+            <l>stette la spoglia immemore </l>
+            <l>orba di tanto spiro, </l>
+            <l>così percossa, attonita </l>
+            <l n="6">la terra al nunzio sta, </l>
+         </lg>
+         <lg type="sestina">
+            <l>muta pensando all’ultima </l>
+            <l>ora dell’uom fatale; </l>
+            <l>né sa quando una simile </l>
+            <l>orma di pié mortale </l>
+            <l>la sua cruenta <name type="mineralNature">polvere</name> </l>
+            <l n="12">a calpestar verrà. </l>
+         </lg>
+         <lg type="sestina">
+            <l>Lui <name type="celestialNature">folgorante</name> in solio </l>
+            <l>vide il mio genio e tacque; </l>
+            <l>quando, con vece assidua, </l>
+            <l>cadde, risorse e giacque, </l>
+            <l>di mille voci al sonito </l>
+            <l n="18">mista la sua non ha: </l>
+         </lg>
+         <lg type="sestina">
+            <l>vergin di servo encomio </l>
+            <l>e di codardo oltraggio, </l>
+            <l>sorge or commosso al subito </l>
+            <l>sparir di tanto <name type="celestialNature">raggio</name>; </l>
+            <l>e scioglie all’urna un cantico </l>
+            <l n="24">che forse non morrà. </l>
+         </lg>
+         <lg type="sestina">
+            <l>Dall'<geogName type="mountains">Alpi</geogName> alle Piramidi, </l>
+            <l>dal <geogName type="river">Manzanarre</geogName> al <geogName type="river">Reno</geogName>, </l>
+            <l>di quel securo il <name type="celestialNature">fulmine</name> </l>
+            <l>tenea dietro al <name type="celestialNature">baleno</name>; </l>
+            <l>scoppiò da <placeName><settlement type="city">Scilla</settlement></placeName> al <geogName type="river">Tanai</geogName>, </l>
+            <l n="30">dall'uno all'altro <name type="marineNature">mar</name>. </l>
+         </lg>
+         <lg type="sestina">
+            <l>Fu vera gloria? Ai posteri </l>
+            <l>l'ardua sentenza: nui </l>
+            <l>chiniam la fronte al Massimo </l>
+            <l>Fattor, che volle in lui </l>
+            <l>del creator suo spirito </l>
+            <l n="36">più vasta orma stampar. </l>
+         </lg>
+         <lg type="sestina">
+            <l>La procellosa e trepida </l>
+            <l>gioia d'un gran disegno,</l>
+            <l>l'ansia d'un cor che indocile </l>
+            <l>serve, pensando al regno; </l>
+            <l>e il giunge, e tiene un premio </l>
+            <l n="42">ch'era follia sperar; </l>
+         </lg>
+         <lg type="sestina">
+            <l>tutto ei provò: la gloria </l>
+            <l>maggior dopo il periglio, </l>
+            <l>la fuga e la vittoria, </l>
+            <l>la reggia e il tristo esiglio: </l>
+            <l>due volte nella <name type="mineralNature">polvere</name>, </l>
+            <l n="48">due volte sull'altar. </l>
+         </lg>
+      </body>
+  </text>
+</TEI>

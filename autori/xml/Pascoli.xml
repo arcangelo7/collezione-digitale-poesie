@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<TEI>
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Poemi conviviali, Alexandros: un'edizione digitale</title>
+            <author>Giovanni Pascoli</author>
+         </titleStmt>
+         <extent>10 KB</extent>
+         <publicationStmt>
+            <distributor>Alma Mater Studiorum</distributor>
+            <pubPlace>Bologna</pubPlace>
+            <address>
+               <street>Via Zamboni 33</street>
+               <postCode>40126</postCode>
+            </address>
+            <date>2019-08-17</date>
+            <availability>
+               <p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni
+                  uso commerciale è vietato.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Poesie</title>
+                  <author>Giovanni Pascoli</author>
+                  <editor role="curatore">Vicinelli, Augusto</editor>
+                  <imprint>
+                     <pubPlace>Milano</pubPlace>
+                     <publisher>A. Mondadori</publisher>
+                     <date when="1997">1997</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <interpretation>
+              <p>Studio del lessico attinente alla natura</p>
+              <p>Studio dei riferimenti spaziali e temporali</p>
+              <p>Studio dei personaggi</p>
+           </interpretation>
+        </editorialDecl>
+        <projectDesc>
+           <p>Arricchire il testo di metainformazioni e visualizzarle, in particolare per quanto riguarda il lessico, i personaggi, il tempo e lo spazio.</p>
+        </projectDesc>
+        <tagsDecl>
+           <namespace name="http://www.tei-c.org/ns/1.0"><!--Inserire a posteriori i tag usati e le occurs="" -->
+              <tagUsage gi="lg">Marca un gruppo di versi, inteso sia come intera poesia che come singola strofa</tagUsage>
+              <tagUsage gi="head">Marca il titolo della singola poesia</tagUsage>
+              <tagUsage gi="l">Marca il singolo verso</tagUsage>
+              <tagUsage gi="name">Marca il lessico della natura e i nomi di persona. Per ulteriori specificazioni vedi la Reference System Declaration</tagUsage>
+              <tagUsage gi="placeName">Marca il nome di un luogo e contiene il tag settlement</tagUsage>
+              <tagUsage gi="settlement">Marca il tipo di luogo, ad esempio una città, ed è contenuto dal tag placeName</tagUsage>
+              <tagUsage gi="country">Marca il tipo di un'unità geopolitica, come una nazione o una regione</tagUsage>
+              <tagUsage gi="geogName">Marca un nome geografico</tagUsage>
+           </namespace>
+        </tagsDecl>
+        <refsDecl><!--Aggiungere a posteriori-->
+           <p>I versi delle terzine sono numerati con l'attributo <att>n</att>, che ricorre ogni tre versi</p>
+           <p>Il lessico del mondo naturale animale è indicato dal valore <val>animalNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale vegetale è indicato dal valore <val>vegetalNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale minerale è indicato dal valore <val>mineralNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale mitologico è indicato dal valore <val>mythNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale celeste è indicato dal valore <val>celestialNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale marino è indicato dal valore <val>marineNature</val> dell'attributo <att>type</att></p>
+           <p>Il nome di una città è segnalato dal valore <val>città</val> dell'attributo <att>type</att></p>
+           <p>Il nome di una regione geografica è segnalato dal valore <val>region</val> dell'attributo <att>type</att></p>
+           <p>Il nome di una montagna è segnalato dal valore <val>mountain</val> dell`attributo <att>type</att></p>
+        </refsDecl>
+     </encodingDesc>
+     <profileDesc>
+        <creation>I <title>Poemi conviviali</title> vennero pubblicati nel <date when="1904">1904</date> a <placeName><settlement type="city">Bologna</settlement></placeName>.</creation>
+        <langUsage>
+           <language ident="it">Italiano</language>
+        </langUsage>
+        <particDesc>
+           <listPerson>
+              <person>
+                 <persName xml:id="FILI">
+                    <forename>Filippo II</forename>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="TIMO">
+                    <forename>Timoteo</forename>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="OLIM">
+                    <forename>Olimpiade</forename>
+                 </persName>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+     <revisionDesc>
+        <change when=""></change>
+     </revisionDesc>
+  </teiHeader>
+   <text xml:lang="it">
+      <body>
+         <head>Poemi conviviali, Alexandros</head>
+         <lg type="strofa">
+            <l>Giungemmo: è il Fine. O sacro Araldo, squilla! </l>
+            <l>Non altra terra se non là, nell'<name type="celestialNature">aria</name>, </l>
+            <l>quella che in mezzo del brocchier vi brilla, </l>
+            <l>o Pezetèri: errante e solitaria </l>
+            <l>terra, inaccessa. Dall'<name type="marineNature">ultima sponda</name> </l>
+            <l>vedete là, mistofori di <placeName><country type="region">Caria</country></placeName>, </l>
+            <l>l'ultimo fiume <name type="marineNature">Oceano</name> senz'onda. </l>
+            <l>O venuti dall'<geogName type="mountain">Haemo</geogName> e dal <geogName type="mountain">Carmelo</geogName>, </l>
+            <l>ecco, la terra sfuma e si profonda </l>
+            <l n="10">dentro la notte fulgida del <name type="celestialNature">cielo</name>. </l>
+         </lg>
+         <lg type="strofa">
+            <l>Fiumane che passai! voi la <name type="vegetalNature">foresta</name> </l>
+            <l>immota nella chiara acqua portate, </l>
+            <l>portate il cupo mormorìo, che resta. </l>
+            <l><name type="mineralNature">Montagne</name> che varcai! dopo varcate, </l>
+            <l>sì grande spazio di su voi non pare, </l>
+            <l>che maggior prima non lo invidiate. </l>
+            <l>Azzurri, come il <name type="celestialNature">cielo</name>, come il mare, </l>
+            <l>o monti! o fiumi! era miglior pensiero </l>
+            <l>ristare, non guardare oltre, sognare: </l>
+            <l n="20">il sogno è l'infinita ombra del Vero. </l>
+         </lg>
+         <lg type="strofa">
+            <l>Oh! più felice, quanto più cammino </l>
+            <l>m'era d'innanzi; quanto più cimenti, </l>
+            <l>quanto più dubbi, quanto più destino! </l>
+            <l>Ad <placeName><settlement type="city">Isso</settlement></placeName>, quando divampava ai vènti </l>
+            <l>notturno il campo, con le mille schiere, </l>
+            <l>e i carri oscuri e gl'infiniti armenti. </l>
+            <l>A <placeName><settlment type="city">Pella</settlment></placeName>! quando nelle lunghe sere </l>
+            <l>inseguivamo, o mio <name type="animalNature">Capo di toro</name>, </l>
+            <l>il <name type="celestialNature">sole</name>; il sole che tra <name type="vegetalNature">selve</name> nere, </l>
+            <l n="30">sempre più lungi, ardea come un tesoro. </l>
+         </lg>
+         <lg type="strofa">
+            <l><name ref="#FILI">Figlio d'Amynta</name>! io non sapea di meta </l>
+            <l>allor che mossi. Un nomo di tra le are </l>
+            <l>intonava <name ref="#TIMO">Timotheo</name>, l'auleta: </l>
+            <l>soffio possente d'un fatale andare, </l>
+            <l>oltre la morte; e m'è nel cuor, presente </l>
+            <l>come in <name type="marineNature">conchiglia murmure di mare</name>. </l>
+            <l>O squillo acuto, o spirito possente, </l>
+            <l>che passi in alto e gridi, che ti segua! </l>
+            <l>ma questo è il Fine, è l'<name type="marineNature">Oceano</name>, il Niente... </l>
+            <l n="40">e il canto passa ed oltre noi dilegua. - </l>
+         </lg>
+         <lg type="strofa">
+            <l>E così, piange, poi che giunse anelo: </l>
+            <l>piange dall'occhio nero come morte; </l>
+            <l>piange dall'occhio azzurro come <name type="celestialNature">cielo</name>. </l>
+            <l>Ché si fa sempre (tale è la sua sorte) </l>
+            <l>nell'occhio nero lo sperar, più vano; </l>
+            <l>nell'occhio azzurro il desiar, più forte. </l>
+            <l>Egli ode <name type="animalNature">belve</name> fremere lontano, </l>
+            <l>egli ode forze incognite, incessanti, </l>
+            <l>passargli a fronte nell'immenso piano, </l>
+            <l n="50">come trotto di <name type="animalNature">mandre d'elefanti</name>. </l>
+         </lg>
+         <lg type="strofa">
+            <l>In tanto nell'<placeName><country type="region">Epiro</country></placeName> aspra e montana </l>
+            <l>filano le sue vergini sorelle </l>
+            <l>pel dolce Assente la milesia lana. </l>
+            <l>A tarda notte, tra le industri ancelle, </l>
+            <l>torcono il fuso con le ceree dita; </l>
+            <l>e il vento passa e passano le <name type="celestialNature">stelle</name>. </l>
+            <l><name ref="#OLIM">Olympiàs</name> in un sogno smarrita </l>
+            <l>ascolta il lungo favellìo d'un fonte, </l>
+            <l>ascolta nella cava ombra infinita </l>
+            <l n="60">le grandi <name type="vegetalNature">quercie</name> bisbigliar sul monte. </l>
+         </lg>
+      </body>
+  </text>
+</TEI>

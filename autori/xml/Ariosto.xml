@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<TEI>
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Orlando Furioso, Proemio, vv. 1-32: un'edizione digitale</title>
+            <author>Ludovico Ariosto</author>
+         </titleStmt>
+         <extent>10 KB</extent>
+         <publicationStmt>
+            <distributor>Alma Mater Studiorum</distributor>
+            <pubPlace>Bologna</pubPlace>
+            <address>
+               <street>Via Zamboni 33</street>
+               <postCode>40126</postCode>
+            </address>
+            <date>2019-06-27</date>
+            <availability>
+               <p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni
+                  uso commerciale è vietato.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Orlando Furioso</title>
+                  <author>Ludovico Ariosto</author>
+                  <editor role="curatore">Caretti, Lanfranco</editor>
+                  <imprint>
+                     <pubPlace>Torino</pubPlace>
+                     <publisher>G. Einaudi</publisher>
+                     <date when="1966">1966</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <interpretation>
+              <p>Studio del lessico attinente alla natura</p>
+              <p>Studio dei riferimenti spaziali e temporali</p>
+              <p>Studio dei personaggi</p>
+           </interpretation>
+        </editorialDecl>
+        <projectDesc>
+           <p>Arricchire il testo di metainformazioni e visualizzarle, in particolare per quanto riguarda il lessico, i personaggi, il tempo e lo spazio.</p>
+        </projectDesc>
+        <tagsDecl>
+           <namespace name="http://www.tei-c.org/ns/1.0"><!--Inserire a posteriori i tag usati e le occurs="" -->
+              <tagUsage gi="lg">Marca un gruppo di versi, inteso sia come intera poesia che come singola strofa</tagUsage>
+              <tagUsage gi="head">Marca il titolo della singola poesia</tagUsage>
+              <tagUsage gi="l">Marca il singolo verso</tagUsage>
+              <tagUsage gi="name">Marca il lessico della natura e i nomi di persona. Per ulteriori specificazioni vedi la Reference System Declaration</tagUsage>
+              <tagUsage gi="placeName">Marca il nome di un luogo e contiene il tag country</tagUsage>
+              <tagUsage gi="country">Marca il nome di uno stato</tagUsage>
+              <tagUsage gi="time">Marca un'unità di tempo</tagUsage>
+              <tagUsage gi="date">Marca una data</tagUsage>
+           </namespace>
+        </tagsDecl>
+        <refsDecl><!--Aggiungere a posteriori-->
+           <p>I versi delle terzine sono numerati con l'attributo <att>n</att>, che ricorre ogni tre versi</p>
+           <p>Il nome di una nazione è segnalato dal valore <val>nation</val> dell'attributo <att>country</att></p>
+           <p>Ulteriori specificazioni sul tempo e sulle date sono forniti dall'indicazione del <val>tempo</val> data dall'attributo<att>when</att></p>
+        </refsDecl>
+     </encodingDesc>
+     <profileDesc>
+        <creation>L'<title>Orlando Furioso</title> è stato composto tra il <date from="1507" to="1516">1507 e il 1516</date> prevalentemente a <placeName><settlement type="city">Ferrara</settlement></placeName></creation>
+        <langUsage>
+           <language ident="it">Italiano</language>
+        </langUsage>
+        <particDesc>
+           <listPerson>
+              <person>
+                 <persName xml:id="AGRA">Agramante</persName>
+              </person>
+              <person>
+                 <persName xml:id="TROI">Troiano</persName>
+              </person>
+              <person>
+                 <persName xml:id="CARL">
+                    <forename>Carlo</forename>
+                    <addName>Magno</addName>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="ORLA">Orlando</persName>
+              </person>
+              <person>
+                 <persName xml:id="BENU">
+                 	<forename>Alessandra</forename>
+                 	<surname>Benucci</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="ERCO">
+                 	<forename>Ercole I</forename>
+                 	<surname>d'Este</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="IPPO">
+                 	<forename>Ippolito</forename>
+                 	<surname>d'Este</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="RUGG">Ruggiero</persName>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+     <revisionDesc>
+        <change when=""></change>
+     </revisionDesc>
+  </teiHeader>
+   <text xml:lang="it">
+      <body>
+         <head>Orlando Furioso, Proemio, vv. 1-32</head>
+         <lg type="ottava">
+            <l>Le donne, i cavallier, l'arme, gli amori, </l>
+            <l>le cortesie, l'audaci imprese io canto, </l>
+            <l>che furo al <date when="732">tempo</date> che passaro i Mori </l>
+            <l>d'Africa il mare, e in 
+            	<placeName>
+		            <country type="nation">
+		            	Francia
+		            </country>
+            	</placeName> 
+            nocquer tanto, </l>
+            <l>seguendo l'ire e i giovenil furori </l>
+            <l>d'<name ref="#AGRA">Agramante</name> lor re, che si diè vanto </l>
+            <l>di vendicar la morte di <name ref="#TROI">Troiano</name> </l>
+            <l n="8">sopra re <name ref="CARL">Carlo</name> imperator romano. </l>
+         </lg>
+         <lg type="ottava">
+            <l>Dirò d'<name ref="#ORLA">Orlando</name> in un medesmo tratto </l>
+            <l>cosa non detta in prosa mai né in rima: </l>
+            <l>che per amor venne in furore e matto, </l>
+            <l>d'uom che sì saggio era stimato prima; </l>
+            <l>se da <name ref="#BENU">colei</name> che tal quasi m'ha fatto, </l>
+            <l>che 'l poco ingegno ad or ad or mi lima, </l>
+            <l>me ne sarà però tanto concesso, </l>
+            <l n="16">me ne sarà però tanto concesso, </l>
+         </lg>
+         <lg type="ottava">
+            <l>Piacciavi, generosa <name ref="#ERCO">Erculea</name> prole, </l>
+            <l>ornamento e splendor del secol nostro, </l>
+            <l><name ref="#IPPO">Ippolito</name>, aggradir questo che vuole </l>
+            <l>e darvi sol può l'umil servo vostro. </l>
+            <l>Quel ch'io vi debbo, posso di parole </l>
+            <l>pagare in parte, e d'opera d'inchiostro; </l>
+            <l>né che poco io vi dia da imputar sono; </l>
+            <l n="24">che quanto io posso dar, tutto vi dono. </l>
+         </lg>
+         <lg type="ottava">
+            <l>Voi sentirete fra i più degni eroi, </l>
+            <l>Voi sentirete fra i più degni eroi, </l>
+            <l>ricordar quel <name ref="#RUGG">Ruggier</name>, che fu di voi </l>
+            <l>e de' vostri avi illustri il ceppo vecchio. </l>
+            <l>L'alto valore e' chiari gesti suoi </l>
+            <l>vi farò udir, se voi mi date orecchio, </l>
+            <l>e vostri alti pensier cedino un poco, </l>
+            <l n="32">sì che tra lor miei versi abbiano loco. </l>
+         </lg>
+      </body>
+  </text>
+</TEI>

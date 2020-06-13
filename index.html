@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Collezione Digitale di Poesie</title>
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        display: flex;
+      }
+      nav {
+        color: white;
+        background-color: black;
+        flex: 1;
+        padding: 5em;
+        height: 100vh;
+        overflow: auto;
+      }
+      nav ul li {
+        border-bottom: 1px solid grey;
+        line-height: 1.7;
+      }  
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        padding: 4px 8px;
+      }
+      nav ul li a:hover {
+        text-decoration: none;
+        background-color: grey;
+        color: white;
+      }
+      #homeSubMenu {
+        text-indent: 1em;
+      }
+      .home-cover {
+        float: left;
+        flex: 2;
+        background-image: url("home-cover.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      @media screen and (max-width: 600px) {
+        .home-cover {
+        float: left;
+        height: 100vh;
+        flex: 1;
+        background-image: url("dorso-libro.PNG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+      nav {
+        color: white;
+        background-color: black;
+        flex: 2;
+        padding: 5em;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="home-cover">
+        <!-- <img class="img-fluid" src="home-cover.jpg" alt="Cover home"> -->
+      </div>
+
+      <nav id="sidebar">
+          <div class="sidebar-header">
+              <h3>Collezione Digitale di Poesie</h3>
+          </div>
+
+          <ul class="list-unstyled components">
+              <p>Università di Bologna</p>
+              <li class="active">
+                  <a href="#homeSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Autori</a>
+                  <ul class="collapse list-unstyled" id="homeSubMenu">
+                      <li>
+                          <a href="autori/dante.html">Dante</a>
+                      </li>
+                      <li>
+                          <a href="autori/petrarca.html">Petrarca</a>
+                      </li>
+                      <li>
+                          <a href="autori/ariosto.html">Ariosto</a>
+                      </li>
+                      <li>
+                          <a href="autori/tasso.html">Tasso</a>
+                      </li>
+                      <li>
+                          <a href="autori/foscolo.html">Foscolo</a>
+                      </li>
+                      <li>
+                          <a href="autori/manzoni.html">Manzoni</a>
+                      </li>
+                      <li>
+                          <a href="autori/leopardi.html">Leopardi</a>
+                      </li>
+                      <li>
+                          <a href="autori/pascoli.html">Pascoli</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="servizi/geobrowser.html">Mappa e Linea del tempo</a>
+              </li>
+              <li>
+                  <a href="servizi/voyant.html">Voyant Tools</a>
+              </li>
+              <li>
+                  <a href="documentazione/documentazione.html">Documentazione</a>
+              </li>
+          </ul>
+      </nav>
+
+    </main>
+  </body>
+</html>

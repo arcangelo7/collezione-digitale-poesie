@@ -1,0 +1,291 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Collezione digitale</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Home</a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              data-toggle="dropdown"
+            >
+              Autori
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="dante.html">Dante</a
+              ><a class="dropdown-item" href="petrarca.html">Petrarca</a
+              ><a class="dropdown-item" href="ariosto.html">Ariosto</a
+              ><a class="dropdown-item" href="tasso.html">Tasso</a
+              ><a class="dropdown-item" href="foscolo.html">Foscolo</a
+              ><a class="dropdown-item" href="leopardi.html">Leopardi</a
+              ><a class="dropdown-item active" href="manzoni.html">Manzoni</a
+              ><a class="dropdown-item" href="pascoli.html">Pascoli</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/geobrowser.html">Mappa e Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/voyant.html">Voyant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documentazione/documentazione.html">Documentazione</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html" title="Home">Home</a></li>
+        <li class="breadcrumb-item"><a href="manzoni.html" title="Home">Scheda Manzoni</a></li>
+        <li class="breadcrumb-item active">Testo</li>
+      </ol>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="row">
+        <nav class="col-md-12 col-lg-3 my-5 ml-lg-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="lessico">Lessico</label>
+            </div>
+            <select class="custom-select" id="lessico" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="minerale">minerale</option
+              ><option value="marino">marino</option
+              ><option value="celeste">celeste</option
+              ><option value="citt&agrave;">citt&agrave;</option
+              ><option value="montagna">montagna</option
+              ><option value="fiume">fiume</option></select
+            >
+          </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="personaggi" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="NAPO">
+                Napoleone Bonaparte
+              </option>
+              <option value="manzoni">Alessandro Manzoni</option>
+              </select
+            >
+            <div class="input-group-append">
+              <label class="input-group-text" for="personaggi"
+                >Personaggi</label
+              >
+            </div>
+          </div>
+          <p class="text-muted my-2">* Verranno evidenziati i versi in cui il personaggio viene nominato, è soggetto grammaticale o prende la parola.</p>
+        </nav>
+        <section class="col-md-12 col-lg-6 my-5 ml-lg-5">
+          <h1>Inni e Odi, Il cinque maggio, vv. 1-48</h1>
+          <div id="testo">
+            <div class="my-5">
+              <p class="NAPO">Ei fu. Siccome immobile, <span class="m-5"></span></p>
+              <p class="NAPO">dato il mortal sospiro, <span class="m-5"></span></p>
+              <p class="NAPO">
+                stette la spoglia immemore <span class="m-5"></span>
+              </p>
+              <p class="NAPO">orba di tanto spiro, <span class="m-5"></span></p>
+              <p class="">
+                cos&igrave; percossa, attonita <span class="m-5"></span>
+              </p>
+              <p class="">la terra al nunzio sta, <span class="m-5">6</span></p>
+            </div>
+            <div class="my-5">
+              <p class="">
+                muta pensando all&rsquo;ultima <span class="m-5"></span>
+              </p>
+              <p class="">
+                ora dell&rsquo;uom fatale; <span class="m-5"></span>
+              </p>
+              <p class="">
+                n&eacute; sa quando una simile <span class="m-5"></span>
+              </p>
+              <p class="">
+                orma di pi&eacute; mortale <span class="m-5"></span>
+              </p>
+              <p class="minerale">
+                la sua cruenta polvere <span class="m-5"></span>
+              </p>
+              <p class="">
+                a calpestar verr&agrave;. <span class="m-5">12</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="celeste">
+                Lui folgorante in solio <span class="m-5"></span>
+              </p>
+              <p class="manzoni">
+                vide il mio genio e tacque; <span class="m-5"></span>
+              </p>
+              <p class="NAPO">
+                quando, con vece assidua, <span class="m-5"></span>
+              </p>
+              <p class="NAPO">
+                cadde, risorse e giacque, <span class="m-5"></span>
+              </p>
+              <p class="manzoni">di mille voci al sonito <span class="m-5"></span></p>
+              <p class="manzoni">mista la sua non ha: <span class="m-5">18</span></p>
+            </div>
+            <div class="my-5">
+              <p class="manzoni">vergin di servo encomio <span class="m-5"></span></p>
+              <p class="manzoni">e di codardo oltraggio, <span class="m-5"></span></p>
+              <p class="manzoni">
+                sorge or commosso al subito <span class="m-5"></span>
+              </p>
+              <p class="celeste NAPO">
+                sparir di tanto raggio; <span class="m-5"></span>
+              </p>
+              <p class="manzoni">
+                e scioglie all&rsquo;urna un cantico <span class="m-5"></span>
+              </p>
+              <p class="">
+                che forse non morr&agrave;. <span class="m-5">24</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="montagna">Dall'Alpi alle Piramidi, <span class="m-5"></span></p>
+              <p class="fiume">dal Manzanarre al Reno, <span class="m-5"></span></p>
+              <p class="celeste">
+                di quel securo il fulmine <span class="m-5"></span>
+              </p>
+              <p class="celeste">
+                tenea dietro al baleno; <span class="m-5"></span>
+              </p>
+              <p class="città fiume">
+                scoppi&ograve; da Scilla al Tanai, <span class="m-5"></span>
+              </p>
+              <p class="marino">
+                dall'uno all'altro mar. <span class="m-5">30</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="">
+                Fu vera gloria? Ai posteri <span class="m-5"></span>
+              </p>
+              <p class="">l'ardua sentenza: nui <span class="m-5"></span></p>
+              <p class="">
+                chiniam la fronte al Massimo <span class="m-5"></span>
+              </p>
+              <p class="">Fattor, che volle in lui <span class="m-5"></span></p>
+              <p class="">del creator suo spirito <span class="m-5"></span></p>
+              <p class="">
+                pi&ugrave; vasta orma stampar. <span class="m-5">36</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="NAPO">La procellosa e trepida <span class="m-5"></span></p>
+              <p class="NAPO">gioia d'un gran disegno,<span class="m-5"></span></p>
+              <p class="NAPO">
+                l'ansia d'un cor che indocile <span class="m-5"></span>
+              </p>
+              <p class="NAPO">
+                serve, pensando al regno; <span class="m-5"></span>
+              </p>
+              <p class="NAPO">
+                e il giunge, e tiene un premio <span class="m-5"></span>
+              </p>
+              <p class="NAPO">ch'era follia sperar; <span class="m-5">42</span></p>
+            </div>
+            <div class="my-5">
+              <p class="NAPO">
+                tutto ei prov&ograve;: la gloria <span class="m-5"></span>
+              </p>
+              <p class="NAPO">
+                maggior dopo il periglio, <span class="m-5"></span>
+              </p>
+              <p class="NAPO">la fuga e la vittoria, <span class="m-5"></span></p>
+              <p class="NAPO">
+                la reggia e il tristo esiglio: <span class="m-5"></span>
+              </p>
+              <p class="NAPO minerale">
+                due volte nella polvere, <span class="m-5"></span>
+              </p>
+              <p class="NAPO">due volte sull'altar. <span class="m-5">48</span></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+         <div class="row">
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Alma Mater Studiorum<br>Scuola di Lettere e Beni Culturali</h6></li>
+               <li class="text-muted">Corso di Laurea Triennale in Lettere Moderne
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Valorizzare il sapere digitale:<br>un esperimento di progettazione</h6></li>
+               <li class="text-muted">Tesi di Laurea Triennale in Informatica Umanistica</li>
+               <li class="text-muted">Relatore: Prof.ssa Francesca Tomasi</li>
+               <li class="text-muted">Presentata da: Arcangelo Massari</li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Anno Accademico 2018/2019</h6></li>
+               <li class="text-muted">Sessione Seconda
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </footer>
+    <script>
+      function evidenzia() {
+        var lessicoSelezionato = $("#lessico").val();
+        var personaggioSelezionato = $("#personaggi").val();
+        $("p").css("background-color", "transparent");
+        if (lessicoSelezionato != "Scegli...") {
+          $("." + lessicoSelezionato).css("background-color", "#ccff99");
+        }
+        if (personaggioSelezionato != "Scegli...") {
+          $("." + personaggioSelezionato).css("background-color", "yellow");
+        }
+      }
+    </script>
+  </body>
+</html>

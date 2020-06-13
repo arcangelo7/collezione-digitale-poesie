@@ -1,0 +1,388 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Collezione digitale</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Home</a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              data-toggle="dropdown"
+            >
+              Autori
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="dante.html">Dante</a
+              ><a class="dropdown-item" href="petrarca.html">Petrarca</a
+              ><a class="dropdown-item" href="ariosto.html">Ariosto</a
+              ><a class="dropdown-item" href="tasso.html">Tasso</a
+              ><a class="dropdown-item" href="foscolo.html">Foscolo</a
+              ><a class="dropdown-item" href="leopardi.html">Leopardi</a
+              ><a class="dropdown-item" href="manzoni.html">Manzoni</a
+              ><a class="dropdown-item active" href="pascoli.html">Pascoli</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/geobrowser.html">Mappa e Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/voyant.html">Voyant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documentazione/documentazione.html">Documentazione</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html" title="Home">Home</a></li>
+        <li class="breadcrumb-item"><a href="pascoli.html" title="Home">Scheda Pascoli</a></li>
+        <li class="breadcrumb-item active">Testo</li>
+      </ol>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="row">
+        <nav class="col-md-12 col-lg-3 my-5 ml-lg-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="lessico">Lessico</label>
+            </div>
+            <select class="custom-select" id="lessico" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="animale">animale</option
+              ><option value="vegetale">vegetale</option
+              ><option value="minerale">minerale</option
+              ><option value="celeste">celeste</option
+              ><option value="marino">marino</option
+              ><option value="citt&agrave;">citt&agrave;</option
+              ><option value="regione">regione</option
+              ></select
+            >
+          </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="personaggi" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              >
+              <option value="FILI">
+                Filippo II </option
+              ><option value="TIMO">
+                Timoteo </option
+              ><option value="OLIM">
+                Olimpiade
+              </option></select
+            >
+            <div class="input-group-append">
+              <label class="input-group-text" for="personaggi"
+                >Personaggi *</label
+              >
+            </div>
+          </div>
+          <p class="text-muted my-2">* Verranno evidenziati i versi in cui il personaggio viene nominato, è soggetto grammaticale o prende la parola.</p>        
+        </nav>
+        <section class="col-md-12 col-lg-6 my-5 ml-lg-5">
+          <h1>Poemi conviviali, Alexandros</h1>
+          <div id="testo">
+            <div class="my-5">
+              <p class="">
+                Giungemmo: &egrave; il Fine. O sacro Araldo, squilla!
+                <span class="m-5"></span>
+              </p>
+              <p class="celeste">
+                Non altra terra se non l&agrave;, nell'aria,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                quella che in mezzo del brocchier vi brilla,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                o Pezet&egrave;ri: errante e solitaria <span class="m-5"></span>
+              </p>
+              <p class="marino">
+                terra, inaccessa. Dall'ultima sponda <span class="m-5"></span>
+              </p>
+              <p class="regione">
+                vedete l&agrave;, mistofori di Caria, <span class="m-5"></span>
+              </p>
+              <p class="marino">
+                l'ultimo fiume Oceano senz'onda. <span class="m-5"></span>
+              </p>
+              <p class="regione">
+                O venuti dall'Haemo e dal Carmelo, <span class="m-5"></span>
+              </p>
+              <p class="">
+                ecco, la terra sfuma e si profonda <span class="m-5"></span>
+              </p>
+              <p class="celeste">
+                dentro la notte fulgida del cielo. <span class="m-5">10</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="vegetale">
+                Fiumane che passai! voi la foresta <span class="m-5"></span>
+              </p>
+              <p class="">
+                immota nella chiara acqua portate, <span class="m-5"></span>
+              </p>
+              <p class="">
+                portate il cupo mormor&igrave;o, che resta.
+                <span class="m-5"></span>
+              </p>
+              <p class="minerale">
+                Montagne che varcai! dopo varcate, <span class="m-5"></span>
+              </p>
+              <p class="">
+                s&igrave; grande spazio di su voi non pare,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                che maggior prima non lo invidiate. <span class="m-5"></span>
+              </p>
+              <p class="celeste marino">
+                Azzurri, come il cielo, come il mare, <span class="m-5"></span>
+              </p>
+              <p class="minerale">
+                o monti! o fiumi! era miglior pensiero <span class="m-5"></span>
+              </p>
+              <p class="">
+                ristare, non guardare oltre, sognare: <span class="m-5"></span>
+              </p>
+              <p class="">
+                il sogno &egrave; l'infinita ombra del Vero.
+                <span class="m-5">20</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="">
+                Oh! pi&ugrave; felice, quanto pi&ugrave; cammino
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                m'era d'innanzi; quanto pi&ugrave; cimenti,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                quanto pi&ugrave; dubbi, quanto pi&ugrave; destino!
+                <span class="m-5"></span>
+              </p>
+              <p class="città">
+                Ad Isso, quando divampava ai v&egrave;nti
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                notturno il campo, con le mille schiere,
+                <span class="m-5"></span>
+              </p>
+              <p class="animale">
+                e i carri oscuri e gl'infiniti armenti.
+                <span class="m-5"></span>
+              </p>
+              <p class="città">
+                A Pella! quando nelle lunghe sere <span class="m-5"></span>
+              </p>
+              <p class="animale">
+                inseguivamo, o mio Capo di toro, <span class="m-5"></span>
+              </p>
+              <p class="celeste vegetale">
+                il sole; il sole che tra selve nere, <span class="m-5"></span>
+              </p>
+              <p class="">
+                sempre pi&ugrave; lungi, ardea come un tesoro.
+                <span class="m-5">30</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="FILI">
+                Figlio d'Amynta! io non sapea di meta <span class="m-5"></span>
+              </p>
+              <p class="">
+                allor che mossi. Un nomo di tra le are <span class="m-5"></span>
+              </p>
+              <p class="TIMO">
+                intonava Timotheo, l'auleta: <span class="m-5"></span>
+              </p>
+              <p class="">
+                soffio possente d'un fatale andare, <span class="m-5"></span>
+              </p>
+              <p class="">
+                oltre la morte; e m'&egrave; nel cuor, presente
+                <span class="m-5"></span>
+              </p>
+              <p class="marino">
+                come in conchiglia murmure di mare. <span class="m-5"></span>
+              </p>
+              <p class="">
+                O squillo acuto, o spirito possente, <span class="m-5"></span>
+              </p>
+              <p class="">
+                che passi in alto e gridi, che ti segua!
+                <span class="m-5"></span>
+              </p>
+              <p class="marino">
+                ma questo &egrave; il Fine, &egrave; l'Oceano, il Niente...
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                e il canto passa ed oltre noi dilegua. -
+                <span class="m-5">40</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="">
+                E cos&igrave;, piange, poi che giunse anelo:
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                piange dall'occhio nero come morte; <span class="m-5"></span>
+              </p>
+              <p class="celeste">
+                piange dall'occhio azzurro come cielo. <span class="m-5"></span>
+              </p>
+              <p class="">
+                Ch&eacute; si fa sempre (tale &egrave; la sua sorte)
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                nell'occhio nero lo sperar, pi&ugrave; vano;
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                nell'occhio azzurro il desiar, pi&ugrave; forte.
+                <span class="m-5"></span>
+              </p>
+              <p class="animale">
+                Egli ode belve fremere lontano, <span class="m-5"></span>
+              </p>
+              <p class="">
+                egli ode forze incognite, incessanti, <span class="m-5"></span>
+              </p>
+              <p class="">
+                passargli a fronte nell'immenso piano, <span class="m-5"></span>
+              </p>
+              <p class="animale">
+                come trotto di mandre d'elefanti. <span class="m-5">50</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="regione">
+                In tanto nell'Epiro aspra e montana <span class="m-5"></span>
+              </p>
+              <p class="">
+                filano le sue vergini sorelle <span class="m-5"></span>
+              </p>
+              <p class="">
+                pel dolce Assente la milesia lana. <span class="m-5"></span>
+              </p>
+              <p class="">
+                A tarda notte, tra le industri ancelle,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                torcono il fuso con le ceree dita; <span class="m-5"></span>
+              </p>
+              <p class="celeste">
+                e il vento passa e passano le stelle. <span class="m-5"></span>
+              </p>
+              <p class="OLIM">
+                Olympi&agrave;s in un sogno smarrita <span class="m-5"></span>
+              </p>
+              <p class="">
+                ascolta il lungo favell&igrave;o d'un fonte,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                ascolta nella cava ombra infinita <span class="m-5"></span>
+              </p>
+              <p class="vegetale minerale">
+                le grandi quercie bisbigliar sul monte.
+                <span class="m-5">60</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+         <div class="row">
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Alma Mater Studiorum<br>Scuola di Lettere e Beni Culturali</h6></li>
+               <li class="text-muted">Corso di Laurea Triennale in Lettere Moderne
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Valorizzare il sapere digitale:<br>un esperimento di progettazione</h6></li>
+               <li class="text-muted">Tesi di Laurea Triennale in Informatica Umanistica</li>
+               <li class="text-muted">Relatore: Prof.ssa Francesca Tomasi</li>
+               <li class="text-muted">Presentata da: Arcangelo Massari</li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Anno Accademico 2018/2019</h6></li>
+               <li class="text-muted">Sessione Seconda
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </footer>
+    <script>
+      function evidenzia() {
+        var lessicoSelezionato = $("#lessico").val();
+        var personaggioSelezionato = $("#personaggi").val();
+        $("p").css("background-color", "transparent");
+        if (lessicoSelezionato != "Scegli...") {
+          $("." + lessicoSelezionato).css("background-color", "#ccff99");
+        }
+        if (personaggioSelezionato != "Scegli...") {
+          $("." + personaggioSelezionato).css("background-color", "yellow");
+        }
+      }
+    </script>
+  </body>
+</html>

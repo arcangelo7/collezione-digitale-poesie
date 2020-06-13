@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<TEI>
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Commedia, Inferno, XXI, vv. 64-114: un'edizione digitale</title>
+            <author>Dante Alighieri</author>
+         </titleStmt>
+         <extent>10 KB</extent>
+         <publicationStmt>
+            <distributor>Alma Mater Studiorum</distributor>
+            <pubPlace>Bologna</pubPlace>
+            <address>
+               <street>Via Zamboni 33</street>
+               <postCode>40126</postCode>
+            </address>
+            <date>2019-06-27</date>
+            <availability>
+               <p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni
+                  uso commerciale è vietato.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>La Commedia secondo l'antica vulgata</title>
+                  <author>Dante Alighieri</author>
+                  <editor role="curatore">Petrocchi, Giorgio</editor>
+                  <imprint>
+                     <pubPlace>Firenze</pubPlace>
+                     <publisher>Le Lettere</publisher>
+                     <date when="1994">1994</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <interpretation>
+              <p>Studio del lessico attinente alla natura</p>
+              <p>Studio dei riferimenti spaziali e temporali</p>
+              <p>Studio dei personaggi</p>
+           </interpretation>
+        </editorialDecl>
+        <projectDesc>
+           <p>Arricchire il testo di metainformazioni e visualizzarle, in particolare per quanto riguarda il lessico, i personaggi, il tempo e lo spazio.</p>
+        </projectDesc>
+        <tagsDecl>
+           <namespace name="http://www.tei-c.org/ns/1.0"><!--Inserire a posteriori i tag usati e le occurs="" -->
+              <tagUsage gi="lg">Marca un gruppo di versi, inteso sia come intera poesia che come singola strofa</tagUsage>
+              <tagUsage gi="head">Marca il titolo della singola poesia</tagUsage>
+              <tagUsage gi="l">Marca il singolo verso</tagUsage>
+              <tagUsage gi="name">Marca il lessico della natura e i nomi di persona. Per ulteriori specificazioni vedi la Reference System Declaration</tagUsage>
+              <tagUsage gi="placeName">Marca il nome di un luogo e contiene il tag settlement</tagUsage>
+              <tagUsage gi="settlement">Marca il tipo di luogo, ad esempio una città, ed è contenuto dal tag placeName</tagUsage>
+              <tagUsage gi="time">Marca un'unità di tempo</tagUsage>
+              <tagUsage gi="date">Marca una data</tagUsage>
+           </namespace>
+        </tagsDecl>
+        <refsDecl><!--Aggiungere a posteriori-->
+           <p>I versi delle terzine sono numerati con l'attributo <att>n</att>, che ricorre ogni tre versi</p>
+           <p>Il lessico del mondo naturale animale è indicato dal valore <val>animalNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale vegetale è indicato dal valore <val>vegetalNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale minerale è indicato dal valore <val>mineralNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale mitologico è indicato dal valore <val>mythNature</val> dell'attributo <att>type</att></p>
+           <p>Il nome di una città è segnalato dal valore <val>città</val> dell'attributo <att>type</att></p>
+           <p>Ulteriori specificazioni sul tempo e sulle date sono forniti dall'indicazione del <val>tempo</val> data dall'attributo<att>when</att></p>
+        </refsDecl>
+     </encodingDesc>
+     <profileDesc>
+        <creation>La data di composizione dell'<title>Inferno</title> è incerta. Si suppone tra il <date from="1306" to="1309">1306 e il 1309</date>. Non c'è un luogo preciso: durante il suo esilio Dante fu itinerante.</creation>
+        <langUsage>
+           <language ident="it">Italiano</language>
+        </langUsage>
+        <particDesc>
+           <listPerson>
+              <person>
+                 <persName>
+                    <forename type="praenomen">Publius</forename>
+                    <forename type="nomen">Vergilius</forename>
+                    <surname type="cognomen">Maro</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName>
+                    <forename>Dante</forename>
+                    <surname>Alighieri</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="MALA">
+                    <forename>Malacoda</forename>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="SCAR">
+                    <forename>Scarmiglione</forename>
+                 </persName>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+     <revisionDesc>
+        <change when="2019-07-02">Aggiunta di informazioni sulle finalità del progetto</change>
+     </revisionDesc>
+  </teiHeader>
+   <text xml:lang="it">
+      <body>
+         <head>Commedia, Inferno, XXI, vv. 64-114</head>
+         <lg type="terzina">
+            <l>Poscia passò di la dal co del ponte; </l>
+            <l>e com'el giunse in su la <name type="mineralNature">ripa</name> sesta, </l>
+            <l n="66">mestier li fu d'aver sicura fronte. </l>
+         </lg>
+         <lg type="terzina">
+            <l>Con quel furore e con quella tempesta </l>
+            <l>ch'escono i <name type="animalNature">cani</name> a dosso al poverello </l>
+            <l n="69">che di sùbito chiede ove s'arresta, </l>
+         </lg>
+         <lg type="terzina">
+            <l>usciron quei di sotto al ponticello, </l>
+            <l>e volser contra lui tutt'i runcigli; </l>
+            <l n="72">ma el gridò: "Nessun di voi sia fello!</l>
+         </lg>
+         <lg type="terzina">
+            <l>Innanzi che l'uncin vostro mi pigli, </l>
+            <l>traggasi avante l'un di voi che m'oda, </l>
+            <l n="75">e poi d'arruncigliarmi si consigli". </l>
+         </lg>
+         <lg type="terzina">
+            <l>Tutti gridaron: "Vada <name ref="#MALA" type="mythNature">Malacoda</name>!"; </l>
+            <l>per ch'un si mosse - e li altri stetter fermi - </l>
+            <l n="78">e venne a lui dicendo: "Che li approda?". </l>
+         </lg>
+         <lg type="terzina">
+            <l>"Credi tu, <name ref="#MALA" type="mythNature">Malacoda</name>, qui vedermi </l>
+            <l>esser venuto", disse 'l mio maestro, </l>
+            <l n="81">"sicuro gia da tutti vostri schermi, </l>
+         </lg>
+         <lg type="terzina">
+            <l>sanza voler divino e fato destro? </l>
+            <l>Lascian' andar, ché nel cielo è voluto </l>
+            <l n="84">ch'i' mostri altrui questo cammin <name type="vegetalNature">silvestro</name>". </l>
+         </lg>
+         <lg type="terzina">
+            <l>Allor li fu l'orgoglio sì caduto, </l>
+            <l>ch'e' si lasciò cascar l'uncino a' piedi, </l>
+            <l n="87">e disse a li altri: "Omai non sia feruto". </l>
+         </lg>
+         <lg type="terzina">
+            <l>E 'l duca mio a me: "O tu che siedi </l>
+            <l>tra li <name type="mineralNature">scheggion</name> del ponte quatto quatto, </l>
+            <l n="90">sicuramente omai a me ti riedi". </l>
+         </lg>
+         <lg type="terzina">
+            <l>Per ch'io mi mossi, e a lui venni ratto; </l>
+            <l>e i diavoli si fecer tutti avanti, </l>
+            <l n="93">sì ch'io temetti ch'ei tenesser patto; </l>
+         </lg>
+         <lg type="terzina">
+            <l>così vid'io già temer li fanti </l>
+            <l>ch'uscivan patteggiati di <placeName>
+               <settlement type="city">Caprona</settlement>
+            </placeName>, </l>
+            <l n="96">veggendo sì tra nemici cotanti. </l>
+         </lg>
+         <lg type="terzina">
+            <l>I' m'accostai con tutta la persona </l>
+            <l>lungo 'l mio duca, e non torceva li occhi </l>
+            <l n="99">da la sembianza lor ch'era non buona. </l>
+         </lg>
+         <lg type="terzina">
+            <l>Ei chinavan li raffi e "Vuo' che 'l tocchi", </l>
+            <l>diceva l'un con l'altro, "in sul groppone?". </l>
+            <l n="102">E rispondien: "Sì, fa che gliel'accocchi". </l>
+         </lg>
+         <lg type="terzina">
+            <l>Ma quel demonio che tenea sermone </l>
+            <l>col duca mio, si volse tutto presto </l>
+            <l n="105">e disse: "Posa, posa, <name ref="#SCAR" type="mythNature">Scarmiglione</name>!". </l>
+         </lg>
+         <lg type="terzina">
+            <l>Poi disse a noi: "Più oltre andar per questo </l>
+            <l><name type="mineralNature">iscoglio</name> non si può, però che giace </l>
+            <l n="108">tutto spezzato al fondo l'arco sesto. </l>
+         </lg>
+         <lg type="terzina">
+            <l>E se l'andare avante pur vi piace, </l>
+            <l>andatevene su per questa <name type="mineralNature">grotta</name>; </l>
+            <l n="11">presso è un altro <name type="mineralNature">scoglio</name> che via face. </l>
+         </lg>
+         <lg type="terzina">
+            <l>Ier, <date when="34-03-25T12:00:00">più oltre cinqu'ore</date> che <date when="1300-03-26T07:00:00">quest'otta</date>, </l>
+            <l><date when="1300">mille dugento con sessanta sei</date></l>
+            <l n="114">anni compié che <date when="0034">qui la via fu rotta</date>.</l>
+         </lg>     
+      </body>
+  </text>
+</TEI>

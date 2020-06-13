@@ -1,0 +1,403 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Collezione digitale</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Home</a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              data-toggle="dropdown"
+            >
+              Autori
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item active" href="dante.html">Dante</a
+              ><a class="dropdown-item" href="petrarca.html">Petrarca</a
+              ><a class="dropdown-item" href="ariosto.html">Ariosto</a
+              ><a class="dropdown-item" href="tasso.html">Tasso</a
+              ><a class="dropdown-item" href="foscolo.html">Foscolo</a
+              ><a class="dropdown-item" href="leopardi.html">Leopardi</a
+              ><a class="dropdown-item" href="manzoni.html">Manzoni</a
+              ><a class="dropdown-item" href="pascoli.html">Pascoli</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/geobrowser.html">Mappa e Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/voyant.html">Voyant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documentazione/documentazione.html">Documentazione</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html" title="Home">Home</a></li>
+        <li class="breadcrumb-item"><a href="dante.html" title="Home">Scheda Dante</a></li>
+        <li class="breadcrumb-item active">Testo</li>
+      </ol>
+    </nav>
+    
+    <main class="container-fluid">
+      <div class="row">
+        <nav class="col-md-12 col-lg-3 my-5 ml-lg-5" id="option_search">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="lessico">Lessico</label>
+            </div>
+            <select class="custom-select" id="lessico" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="animale">animale</option
+              ><option value="vegetale">vegetale</option
+              ><option value="minerale">minerale</option
+              ><option value="mitico">mitico</option
+              ><option value="citt&agrave;">citt&agrave;</option
+              ><option value="tempo">tempo</option></select
+            >
+          </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="personaggi" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="virgilio">
+                Publius Vergilius Maro </option
+              ><option value="dante">
+                Dante Alighieri </option
+              ><option value="MALA">
+                Malacoda </option
+              ><option value="SCAR">
+                Scarmiglione
+              </option></select
+            >
+            <div class="input-group-append">
+              <label class="input-group-text" for="personaggi"
+                >Personaggi *</label>
+            </div>
+          </div>
+          <p class="text-muted my-2">* Verranno evidenziati i versi in cui il personaggio viene nominato, è soggetto grammaticale o prende la parola.</p>
+        </nav>
+        <section class="col-md-12 col-lg-6 my-5 ml-lg-5">
+          <h1>Commedia, Inferno, XXI, vv. 64-114</h1>
+          <div id="testo">
+            <div class="my-5">
+              <p class="virgilio">
+                Poscia pass&ograve; di la dal co del ponte;
+                <span class="m-5"></span>
+              </p>
+              <p class="minerale virgilio">
+                e com'el giunse in su la ripa sesta, <span class="m-5"></span>
+              </p>
+              <p class="virgilio">
+                mestier li fu d'aver sicura fronte. <span class="m-5">66</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="">
+                Con quel furore e con quella tempesta <span class="m-5"></span>
+              </p>
+              <p class="animale">
+                ch'escono i cani a dosso al poverello <span class="m-5"></span>
+              </p>
+              <p class="">
+                che di s&ugrave;bito chiede ove s'arresta,
+                <span class="m-5">69</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="">
+                usciron quei di sotto al ponticello, <span class="m-5"></span>
+              </p>
+              <p class="">
+                e volser contra lui tutt'i runcigli; <span class="m-5"></span>
+              </p>
+              <p class="virgilio">
+                ma el grid&ograve;: "Nessun di voi sia fello!<span class="m-5"
+                  >72</span
+                >
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="virgilio">
+                Innanzi che l'uncin vostro mi pigli, <span class="m-5"></span>
+              </p>
+              <p class="virgilio">
+                traggasi avante l'un di voi che m'oda, <span class="m-5"></span>
+              </p>
+              <p class="virgilio">
+                e poi d'arruncigliarmi si consigli". <span class="m-5">75</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="MALA mitico">
+                Tutti gridaron: "Vada Malacoda!"; <span class="m-5"></span>
+              </p>
+              <p class="MALA">
+                per ch'un si mosse - e li altri stetter fermi -
+                <span class="m-5"></span>
+              </p>
+              <p class="MALA">
+                e venne a lui dicendo: "Che li approda?".
+                <span class="m-5">78</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="virgilio MALA">
+                "Credi tu, Malacoda, qui vedermi <span class="m-5"></span>
+              </p>
+              <p class="virgilio">
+                esser venuto", disse 'l mio maestro, <span class="m-5"></span>
+              </p>
+              <p class="virgilio">
+                "sicuro gia da tutti vostri schermi, <span class="m-5">81</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="virgilio">
+                sanza voler divino e fato destro? <span class="m-5"></span>
+              </p>
+              <p class="virgilio">
+                Lascian' andar, ch&eacute; nel cielo &egrave; voluto
+                <span class="m-5"></span>
+              </p>
+              <p class="vegetale virgilio">
+                ch'i' mostri altrui questo cammin silvestro".
+                <span class="m-5">84</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="MALA">
+                Allor li fu l'orgoglio s&igrave; caduto,
+                <span class="m-5"></span>
+              </p>
+              <p class="MALA">
+                ch'e' si lasci&ograve; cascar l'uncino a' piedi,
+                <span class="m-5"></span>
+              </p>
+              <p class="MALA">
+                e disse a li altri: "Omai non sia feruto".
+                <span class="m-5">87</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="virgilio">
+                E 'l duca mio a me: "O tu che siedi <span class="m-5"></span>
+              </p>
+              <p class="minerale virgilio">
+                tra li scheggion del ponte quatto quatto,
+                <span class="m-5"></span>
+              </p>
+              <p class="virgilio">
+                sicuramente omai a me ti riedi". <span class="m-5">90</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="dante">
+                Per ch'io mi mossi, e a lui venni ratto;
+                <span class="m-5"></span>
+              </p>
+              <p class="mitico">
+                e i diavoli si fecer tutti avanti, <span class="m-5"></span>
+              </p>
+              <p class="dante">
+                s&igrave; ch'io temetti ch'ei tenesser patto;
+                <span class="m-5">93</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="dante">
+                cos&igrave; vid'io gi&agrave; temer li fanti
+                <span class="m-5"></span>
+              </p>
+              <p class="città">
+                ch'uscivan patteggiati di Caprona , <span class="m-5"></span>
+              </p>
+              <p class="">
+                veggendo s&igrave; tra nemici cotanti.
+                <span class="m-5">96</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="dante">
+                I' m'accostai con tutta la persona <span class="m-5"></span>
+              </p>
+              <p class="dante">
+                lungo 'l mio duca, e non torceva li occhi
+                <span class="m-5"></span>
+              </p>
+              <p class="dante">
+                da la sembianza lor ch'era non buona.
+                <span class="m-5">99</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="">
+                Ei chinavan li raffi e "Vuo' che 'l tocchi",
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                diceva l'un con l'altro, "in sul groppone?".
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                E rispondien: "S&igrave;, fa che gliel'accocchi".
+                <span class="m-5">102</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="MALA mitico">
+                Ma quel demonio che tenea sermone <span class="m-5"></span>
+              </p>
+              <p class="MALA">
+                col duca mio, si volse tutto presto <span class="m-5"></span>
+              </p>
+              <p class="SCAR MALA mitico">
+                e disse: "Posa, posa, Scarmiglione!".
+                <span class="m-5">105</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="MALA">
+                Poi disse a noi: "Pi&ugrave; oltre andar per questo
+                <span class="m-5"></span>
+              </p>
+              <p class="minerale MALA">
+                iscoglio non si pu&ograve;, per&ograve; che giace
+                <span class="m-5"></span>
+              </p>
+              <p class="MALA">
+                tutto spezzato al fondo l'arco sesto.
+                <span class="m-5">108</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="MALA">
+                E se l'andare avante pur vi piace, <span class="m-5"></span>
+              </p>
+              <p class="minerale MALA">
+                andatevene su per questa grotta; <span class="m-5"></span>
+              </p>
+              <p class="minerale MALA">
+                presso &egrave; un altro scoglio che via face.
+                <span class="m-5">11</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="MALA tempo">
+                Ier, pi&ugrave; oltre cinqu'ore che quest'otta,
+                <span class="m-5"></span>
+              </p>
+              <p class="MALA tempo">
+                mille dugento con sessanta sei<span class="m-5"></span>
+              </p>
+              <p class="MALA tempo">
+                anni compi&eacute; che qui la via fu rotta.<span class="m-5"
+                  >114</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+         <div class="row">
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Alma Mater Studiorum<br>Scuola di Lettere e Beni Culturali</h6></li>
+               <li class="text-muted">Corso di Laurea Triennale in Lettere Moderne
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Valorizzare il sapere digitale:<br>un esperimento di progettazione</h6></li>
+               <li class="text-muted">Tesi di Laurea Triennale in Informatica Umanistica</li>
+               <li class="text-muted">Relatore: Prof.ssa Francesca Tomasi</li>
+               <li class="text-muted">Presentata da: Arcangelo Massari</li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Anno Accademico 2018/2019</h6></li>
+               <li class="text-muted">Sessione Seconda
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </footer>
+    <script>
+      function evidenzia() {
+        var lessicoSelezionato = $("#lessico").val();
+        var personaggioSelezionato = $("#personaggi").val();
+        $("p").css("background-color", "transparent");
+        if (lessicoSelezionato != "Scegli...") {
+          $("." + lessicoSelezionato).css("background-color", "#ccff99");
+        }
+        if (personaggioSelezionato != "Scegli...") {
+          $("." + personaggioSelezionato).css("background-color", "yellow");
+        }
+      }
+
+      // var fixmeTop = $('#option_search').offset().top;   
+
+      // $(window).scroll(function() {                 
+      //     var currentScroll = $(window).scrollTop();
+      //     if (currentScroll >= fixmeTop) {           
+      //         $('#option_search').css({                  
+      //             position: 'fixed',
+      //             top: '0',
+      //             left: '0'
+      //         });
+      //     } else {                              
+      //         $('#option_search').css({             
+      //             position: 'static'
+      //         });
+      //     }
+      // });      
+    </script>
+  </body>
+</html>

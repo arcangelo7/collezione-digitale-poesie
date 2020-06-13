@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<TEI>
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dei Sepolcri, vv. 173-225: un'edizione digitale</title>
+            <author>Ugo Foscolo</author>
+         </titleStmt>
+         <extent>10 KB</extent>
+         <publicationStmt>
+            <distributor>Alma Mater Studiorum</distributor>
+            <pubPlace>Bologna</pubPlace>
+            <address>
+               <street>Via Zamboni 33</street>
+               <postCode>40126</postCode>
+            </address>
+            <date>2019-08-15</date>
+            <availability>
+               <p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni
+                  uso commerciale è vietato.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Le opere</title>
+                  <author>Ugo Foscolo</author>
+                  <editor role="curatore">Pagliai, Francesco</editor>
+                  <imprint>
+                     <pubPlace>Firenze</pubPlace>
+                     <publisher>Le Monnier</publisher>
+                     <date when="1985">1985</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <interpretation>
+              <p>Studio del lessico attinente alla natura</p>
+              <p>Studio dei riferimenti spaziali e temporali</p>
+              <p>Studio dei personaggi</p>
+           </interpretation>
+        </editorialDecl>
+        <projectDesc>
+           <p>Arricchire il testo di metainformazioni e visualizzarle, in particolare per quanto riguarda il lessico, i personaggi, il tempo e lo spazio.</p>
+        </projectDesc>
+        <tagsDecl>
+           <namespace name="http://www.tei-c.org/ns/1.0"><!--Inserire a posteriori i tag usati e le occurs="" -->
+              <tagUsage gi="lg">Marca un gruppo di versi, inteso sia come intera poesia che come singola strofa</tagUsage>
+              <tagUsage gi="head">Marca il titolo della singola poesia</tagUsage>
+              <tagUsage gi="l">Marca il singolo verso</tagUsage>
+              <tagUsage gi="name">Marca il lessico della natura e i nomi di persona. Per ulteriori specificazioni vedi la Reference System Declaration</tagUsage>
+              <tagUsage gi="placeName">Marca il nome di un luogo e contiene il tag settlement</tagUsage>
+              <tagUsage gi="settlement">Marca il tipo di luogo, ad esempio una città, ed è contenuto dal tag placeName</tagUsage>
+              <tagUsage gi="country">Marca il tipo di un'unità geopolitica, come una nazione</tagUsage>
+              <tagUsage gi="geogName">Marca un nome geografico</tagUsage>
+           </namespace>
+        </tagsDecl>
+        <refsDecl><!--Aggiungere a posteriori-->
+           <p>I versi delle terzine sono numerati con l'attributo <att>n</att>, che ricorre ogni tre versi</p>
+           <p>Il lessico del mondo naturale animale è indicato dal valore <val>animalNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale minerale è indicato dal valore <val>mineralNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale mitologico è indicato dal valore <val>mythNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale celeste è indicato dal valore <val>celestialNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale marino è indicato dal valore <val>marineNature</val> dell'attributo <att>type</att></p>
+           <p>Il nome di una città è segnalato dal valore <val>city</val> dell'attributo <att>type</att></p>
+           <p>Il nome di una nazione è segnalato dal valore <val>nation</val> dell'attributo <att>type</att></p>          
+           <p>Il nome di una catena montuosa è segnalato dal valore <val>mountains</val> dell`attributo <att>type</att></p>
+           <p>Il nome di un fiume è segnalato dal valore <val>river</val> dell`attributo <att>type</att></p>
+           <p>Il nome di un'isola è segnalato dal valore <val>isle</val> dell`attributo <att>type</att></p>
+        </refsDecl>
+     </encodingDesc>
+     <profileDesc>
+        <creation>Il carme è stato composto nel <date when="1806">1806</date>.</creation>
+        <langUsage>
+           <language ident="it">Italiano</language>
+        </langUsage>
+        <particDesc>
+           <listPerson>
+              <person>
+                 <persName>
+                    <forename type="praenomen">Publius</forename>
+                    <forename type="nomen">Vergilius</forename>
+                    <surname type="cognomen">Maro</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="DANT">
+                    <forename>Dante</forename>
+                    <surname>Alighieri</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="PETR">
+                    <forename>Francesco</forename>
+                    <surname>Petrarca</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="ALFI">
+                    <forename>Vittorio</forename>
+                    <surname>Alfieri</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="IPPO">
+                    <forename>Ippolito</forename>
+                    <surname>Pindemonte</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="AIAC">
+                    <forename>Aiace</forename>
+                    <surname>Telamonio</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="ACHI">
+                    <forename>Achille</forename>
+                 </persName>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+     <revisionDesc>
+        <change when=""></change>
+     </revisionDesc>
+  </teiHeader>
+   <text xml:lang="it">
+      <body>
+         <head>Dei Sepolcri, vv. 173-225</head>
+         <lg>
+            <l n="173">E tu prima, <placeName><settlement type="city">Firenze</settlement></placeName>, udivi il carme </l>
+            <l>che allegrò l’ira al <name ref="#DANT">Ghibellin fuggiasco</name>, </l>
+            <l>dèsti a quel <name ref="#PETR">dolce di Calliope labbro</name>, </l>
+            <l>amore in <placeName><country type="nation">Grecia</country></placeName> nudo e nudo in <placeName><settlement type="city">Roma</settlement></placeName> </l>
+            <l>d’un velo candidissimo adornando, </l>
+            <l>rendea nel grembo a <name type="mythNature">Venere Celeste</name>; </l>
+            <l>ma più beata che in un tempio accolte </l>
+            <l>serbi l’Itale glorie, uniche forse </l>
+            <l>da che le mal vietate <geogName type="mountains"><name type="mineralNature">Alpi</name></geogName> e l’alterna </l>
+            <l n="183">onnipotenza delle umane sorti, </l>
+            <l>armi e sostanze t’invadeano, ed are </l>
+            <l>e patria, e, tranne la memoria, tutto. </l>
+            <l>Che ove speme di gloria agli animosi </l>
+            <l>intelletti rifulga ed all’<placeName><country type="nation">Italia</country></placeName>, </l>
+            <l>quindi trarrem gli auspici. E a questi <name type="mineralNature">marmi</name> </l>
+            <l>venne spesso <name ref="#ALFI">Vittorio</name> ad ispirarsi, </l>
+            <l>irato a’ patrii <name ref="mythNature">Numi</name>; errava muto </l>
+            <l>ove <geogName type="river">Arno</geogName> è più deserto, i <name type="vegetalNature">campi</name> e il <name type="celestialNature">cielo</name> </l>
+            <l>desîoso mirando; e poi che nullo </l>
+            <l n="193">vivente aspetto gli molcea la cura, </l>
+            <l>qui posava l’austero; e avea sul volto </l>
+            <l>il pallor della morte e la speranza. </l>
+            <l>Con questi grandi abita eterno: e l’ossa </l>
+            <l>fremono amor di patria. Ah sì! da quella </l>
+            <l>religïosa pace un <name type="mythNature">Nume</name> parla: </l>
+            <l>e nutrìa contro a’ Persi in <placeName><settlement type="city">Maratona</settlement></placeName> </l>
+            <l>ove <placeName><settlement type="city">Atene</settlement></placeName> sacrò tombe a’ suoi prodi, </l>
+            <l>la virtù greca e l’ira. Il navigante </l>
+            <l>che veleggiò quel mar sotto l’<geogName type="isle">Eubea</geogName>, </l>
+            <l n="203">vedea per l’<name type="celestialNature">ampia oscurità</name> scintille </l>
+            <l>balenar d’elmi e di cozzanti brandi, </l>
+            <l>fumar le pire igneo vapor, corrusche </l>
+            <l>d’armi ferree vedea larve guerriere </l>
+            <l>cercar la pugna; e all’orror de’ notturni </l>
+            <l>silenzi si spandea lungo ne’ <name type="vegentalNature">campi</name> </l>
+            <l>di falangi un tumulto e un suon di tube </l>
+            <l>e un incalzar di <name type="animalNature">cavalli</name> accorrenti </l>
+            <l>scalpitanti su gli elmi a’ moribondi, </l>
+            <l>e pianto, ed inni, e delle <name type="mythNature">Parche</name> il canto. </l>
+            <l n="213">Felice te che il <name type="marineNature">regno ampio de’ venti</name>, </l>
+            <l><name type="#IPPO">Ippolito</name>, a’ tuoi verdi anni correvi! </l>
+            <l>E se il piloto ti drizzò l’antenna </l>
+            <l>oltre l’<geogName type="isle">isole Egée</geogName>, d’antichi fatti </l>
+            <l>certo udisti suonar dell’Ellesponto </l>
+            <l>i liti, e la <name type="marineNature">marea</name> mugghiar portando </l>
+            <l>alle prode Retèe l’armi d’<name ref="#ACHI">Achille</name> </l>
+            <l>sovra l’ossa d’<name ref="#AIAC">Ajace</name>: a’ generosi </l>
+            <l>giusta di glorie dispensiera è morte: </l>
+            <l>nè senno astuto, nè favor di regi </l>
+            <l n="223">all’Itaco le spoglie ardue serbava, </l>   
+            <l>chè alla poppa raminga le ritolse </l>
+            <l>l’<name type="marineNature">onda</name> incitata dagl’<name type="mythNature">inferni Dei</name> </l> 
+      </lg>
+      </body>
+  </text>
+</TEI>

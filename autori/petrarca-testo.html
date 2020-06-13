@@ -1,0 +1,224 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Collezione digitale</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Home</a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              data-toggle="dropdown"
+            >
+              Autori
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="dante.html">Dante</a
+              ><a class="dropdown-item active" href="petrarca.html">Petrarca</a
+              ><a class="dropdown-item" href="ariosto.html">Ariosto</a
+              ><a class="dropdown-item" href="tasso.html">Tasso</a
+              ><a class="dropdown-item" href="foscolo.html">Foscolo</a
+              ><a class="dropdown-item" href="leopardi.html">Leopardi</a
+              ><a class="dropdown-item" href="manzoni.html">Manzoni</a
+              ><a class="dropdown-item" href="pascoli.html">Pascoli</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/geobrowser.html">Mappa e Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/voyant.html">Voyant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documentazione/documentazione.html">Documentazione</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html" title="Home">Home</a></li>
+        <li class="breadcrumb-item"><a href="petrarca.html" title="Home">Scheda Petrarca</a></li>
+        <li class="breadcrumb-item active">Testo</li>
+      </ol>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="row">
+        <nav class="col-md-12 col-lg-3 my-5 ml-lg-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="lessico">Lessico</label>
+            </div>
+            <select class="custom-select" id="lessico" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="mitico">mitico</option
+              ><option value="celeste">celeste</option
+              ><option value="tempo">tempo</option></select
+            >
+          </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="personaggi" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="laura">
+                Laura </option
+              ><option value="petrarca">
+                Francesco Petrarca
+              </option></select
+            >
+            <div class="input-group-append">
+              <label class="input-group-text" for="personaggi"
+                >Personaggi *</label
+              >
+            </div>
+          </div>
+          <p class="text-muted my-2">* Verranno evidenziati i versi in cui il personaggio viene nominato, è soggetto grammaticale o prende la parola.</p>
+        </nav>
+        <section class="col-md-12 col-lg-6 my-5 ml-lg-5">
+          <h1>Rerum Vulgarium Fragmenta, 336</h1>
+          <div id="testo">
+            <div class="my-5">
+              <p class="laura">
+                Tornami a mente, anzi v' &egrave; dentro, quella
+                <span class="m-5"></span>
+              </p>
+              <p class="mitico laura">
+                ch' indi per Lethe esser non p&ograve; sbandita,
+                <span class="m-5"></span>
+              </p>
+              <p class="petrarca">
+                qual io la vidi in su l' et&agrave; fiorita,
+                <span class="m-5"></span>
+              </p>
+              <p class="celeste">
+                tutta accesa de' raggi di sua stella. <span class="m-5"></span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="petrarca">
+                S&iacute; nel mio primo occorso honesta et bella
+                <span class="m-5">5</span>
+              </p>
+              <p class="petrarca">
+                veggiola, in s&eacute; raccolta, et s&iacute; romita,
+                <span class="m-5"></span>
+              </p>
+              <p class="petrarca">
+                ch' i' grido: &ndash;Ell' &egrave; ben dessa; anchor &egrave; in
+                vita&ndash;, <span class="m-5"></span>
+              </p>
+              <p class="petrarca">
+                e 'n don le cheggio sua dolce favella. <span class="m-5"></span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="laura">
+                Talor risponde, et talor non fa motto.<span class="m-5"></span>
+              </p>
+              <p class="petrarca">
+                I' come huom ch' erra, et poi pi&uacute; dritto estima,
+                <span class="m-5">10</span>
+              </p>
+              <p class="petrarca">
+                dico a la mente mia: &ndash;Tu se' 'ngannata.
+                <span class="m-5"></span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="petrarca tempo">
+                Sai che 'n mille trecento quarantotto, <span class="m-5"></span>
+              </p>
+              <p class="petrarca tempo">
+                il d&iacute; sesto d' aprile, in l' ora prima,
+                <span class="m-5"></span>
+              </p>
+              <p class="laura">
+                del corpo usc&iacute;o quell' anima beata.&ndash;
+                <span class="m-5"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+         <div class="row">
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Alma Mater Studiorum<br>Scuola di Lettere e Beni Culturali</h6></li>
+               <li class="text-muted">Corso di Laurea Triennale in Lettere Moderne
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Valorizzare il sapere digitale:<br>un esperimento di progettazione</h6></li>
+               <li class="text-muted">Tesi di Laurea Triennale in Informatica Umanistica</li>
+               <li class="text-muted">Relatore: Prof.ssa Francesca Tomasi</li>
+               <li class="text-muted">Presentata da: Arcangelo Massari</li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Anno Accademico 2018/2019</h6></li>
+               <li class="text-muted">Sessione Seconda
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </footer>
+    <script>
+      function evidenzia() {
+        var lessicoSelezionato = $("#lessico").val();
+        var personaggioSelezionato = $("#personaggi").val();
+        $("p").css("background-color", "transparent");
+        if (lessicoSelezionato != "Scegli...") {
+          $("." + lessicoSelezionato).css("background-color", "#ccff99");
+        }
+        if (personaggioSelezionato != "Scegli...") {
+          $("." + personaggioSelezionato).css("background-color", "yellow");
+        }
+      }
+    </script>
+  </body>
+</html>

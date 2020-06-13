@@ -1,0 +1,328 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Collezione digitale</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Home</a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              data-toggle="dropdown"
+            >
+              Autori
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="dante.html">Dante</a
+              ><a class="dropdown-item" href="petrarca.html">Petrarca</a
+              ><a class="dropdown-item" href="ariosto.html">Ariosto</a
+              ><a class="dropdown-item active" href="tasso.html">Tasso</a
+              ><a class="dropdown-item" href="foscolo.html">Foscolo</a
+              ><a class="dropdown-item" href="leopardi.html">Leopardi</a
+              ><a class="dropdown-item" href="manzoni.html">Manzoni</a
+              ><a class="dropdown-item" href="pascoli.html">Pascoli</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/geobrowser.html">Mappa e Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/voyant.html">Voyant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documentazione/documentazione.html">Documentazione</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html" title="Home">Home</a></li>
+        <li class="breadcrumb-item"><a href="tasso.html" title="Home">Scheda Tasso</a></li>
+        <li class="breadcrumb-item active">Testo</li>
+      </ol>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="row">
+        <nav class="col-md-12 col-lg-3 my-5 ml-lg-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="lessico">Lessico</label>
+            </div>
+            <select class="custom-select" id="lessico" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              >
+              <option value="vegetale">vegetale</option>
+              <option value="animale">animale</option>
+              <option value="mitico">mitico</option
+              ><option value="celeste">celeste</option
+              ><option value="marino">marino</option
+              ><option value="nazione">nazione</option
+              ><option value="montagna">montagna</option
+              ></select
+            >
+          </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="personaggi" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              >
+              <option value="tasso">Torquato Tasso</option>
+              <option value="GOFFR">
+                Goffredo di Buglione </option
+              ><option value="GESU">
+                Ges&ugrave; </option
+              ><option value="MARI">
+                Vergine Maria </option
+              ><option value="ALFO">
+                Alfonso II d'Este
+              </option></select
+            >
+            <div class="input-group-append">
+              <label class="input-group-text" for="personaggi"
+                >Personaggi *</label
+              >
+            </div>
+          </div>
+          <p class="text-muted my-2">* Verranno evidenziati i versi in cui il personaggio viene nominato, è soggetto grammaticale o prende la parola.</p>
+        </nav>
+        <section class="col-md-12 col-lg-6 my-5 ml-lg-5">
+          <h1>Gerusalemme Liberata, Proemio, vv. 1-40</h1>
+          <div id="testo">
+            <div class="my-5">
+              <p class="tasso">
+                Canto l'arme pietose e 'l capitano; <span class="m-5"></span>
+              </p>
+              <p class="GOFFR GESU">
+                che 'l gran sepolcro liber&ograve; di Cristo.
+                <span class="m-5"></span>
+              </p>
+              <p class="GOFFR">
+                Molto egli opr&ograve; co 'l senno e con la mano,
+                <span class="m-5"></span>
+              </p>
+              <p class="GOFFR">
+                molto soffr&igrave; nel glorioso acquisto;
+                <span class="m-5"></span>
+              </p>
+              <p class="mitico">
+                e in van l'Inferno vi s'oppose, e in vano
+                <span class="m-5"></span>
+              </p>
+              <p class="nazione">
+                s'arm&ograve; d'Asia e di Libia il popol misto.
+                <span class="m-5"></span>
+              </p>
+              <p class="celeste">
+                Il Ciel gli di&egrave; favore, e sotto a i santi
+                <span class="m-5"></span>
+              </p>
+              <p class="GOFFR">
+                segni ridusse i suoi compagni erranti.
+                <span class="m-5">8</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="mitico MARI vegetale">
+                O Musa, tu che di caduchi allori <span class="m-5"></span>
+              </p>
+              <p class="MARI montagna">
+                non circondi la fronte in Elicona <span class="m-5"></span>
+              </p>
+              <p class="celeste MARI">
+                ma su nel cielo infra i beati cori <span class="m-5"></span>
+              </p>
+              <p class="celeste MARI">
+                hai di stelle immortali aurea corona, <span class="m-5"></span>
+              </p>
+              <p class="celeste MARI">
+                tu spira al petto mio celesti ardori, <span class="m-5"></span>
+              </p>
+              <p class="MARI">
+                tu rischiara il mio canto, e tu perdona
+                <span class="m-5"></span>
+              </p>
+              <p class="tasso">
+                s'intesso fregi al ver, s'adorno in parte
+                <span class="m-5"></span>
+              </p>
+              <p class="tasso">
+                d'altri diletti, che de' tuoi le carte.
+                <span class="m-5">16</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="MARI">
+                Sai che l&agrave; corre il mondo ove pi&ugrave; versi
+                <span class="m-5"></span>
+              </p>
+              <p class="montagna">
+                di sue dolcezze il lusinghier Parnaso, <span class="m-5"></span>
+              </p>
+              <p class="">
+                e che 'l vero, condito in molli versi, <span class="m-5"></span>
+              </p>
+              <p class="">
+                i pi&ugrave; schivi allettando ha persuaso.
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                Cos&igrave; a l'egro fanciul porgiamo aspersi
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                di soavi licor gli orli del vaso: <span class="m-5"></span>
+              </p>
+              <p class="">
+                succhi amari ingannato intanto ei beve,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                e da l'inganno suo vita riceve. <span class="m-5">24</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="ALFO">
+                Tu, magnanimo Alfonso, il qual ritogli <span class="m-5"></span>
+              </p>
+              <p class="marino ALFO">
+                al furor di fortuna e guidi in porto <span class="m-5"></span>
+              </p>
+              <p class="marino ALFO">
+                me peregrino errante, e fra gli scogli <span class="m-5"></span>
+              </p>
+              <p class="marino ALFO">
+                e fra l'onde agitato e quasi absorto, <span class="m-5"></span>
+              </p>
+              <p class="ALFO">
+                queste mie carte in lieta fronte accogli,
+                <span class="m-5"></span>
+              </p>
+              <p class="tasso">
+                che quasi in voto a te sacrate i' porto
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                Forse un d&igrave; fia che la presaga penna
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                osi scriver di te quel ch'or n'accenna.
+                <span class="m-5">32</span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="">
+                E' ben ragion, s'egli averr&agrave; ch'in pace
+                <span class="m-5"></span>
+              </p>
+              <p class="GESU">
+                il buon popol di Cristo unqua si veda, <span class="m-5"></span>
+              </p>
+              <p class="marino animale">
+                e con navi e cavalli al fero Trace <span class="m-5"></span>
+              </p>
+              <p class="">
+                cerchi rit&ograve;r la grande ingiusta preda,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                ch'a te lo scettro in terra o, se ti piace,
+                <span class="m-5"></span>
+              </p>
+              <p class="marino">
+                l'alto imperio de' mari a te conceda. <span class="m-5"></span>
+              </p>
+              <p class="GOFFR ALFO">
+                Emulo di Goffredo, i nostri carmi <span class="m-5"></span>
+              </p>
+              <p class="ALFO">
+                intanto ascolta, e t'apparecchia a l'armi.
+                <span class="m-5">40</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+         <div class="row">
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Alma Mater Studiorum<br>Scuola di Lettere e Beni Culturali</h6></li>
+               <li class="text-muted">Corso di Laurea Triennale in Lettere Moderne
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Valorizzare il sapere digitale:<br>un esperimento di progettazione</h6></li>
+               <li class="text-muted">Tesi di Laurea Triennale in Informatica Umanistica</li>
+               <li class="text-muted">Relatore: Prof.ssa Francesca Tomasi</li>
+               <li class="text-muted">Presentata da: Arcangelo Massari</li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Anno Accademico 2018/2019</h6></li>
+               <li class="text-muted">Sessione Seconda
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </footer>
+    <script>
+      function evidenzia() {
+        var lessicoSelezionato = $("#lessico").val();
+        var personaggioSelezionato = $("#personaggi").val();
+        $("p").css("background-color", "transparent");
+        if (lessicoSelezionato != "Scegli...") {
+          $("." + lessicoSelezionato).css("background-color", "#ccff99");
+        }
+        if (personaggioSelezionato != "Scegli...") {
+          $("." + personaggioSelezionato).css("background-color", "yellow");
+        }
+      }
+    </script>
+  </body>
+</html>

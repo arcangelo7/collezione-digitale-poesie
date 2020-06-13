@@ -1,0 +1,267 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Collezione digitale</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Home</a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              data-toggle="dropdown"
+            >
+              Autori
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="dante.html">Dante</a
+              ><a class="dropdown-item" href="petrarca.html">Petrarca</a
+              ><a class="dropdown-item" href="ariosto.html">Ariosto</a
+              ><a class="dropdown-item" href="tasso.html">Tasso</a
+              ><a class="dropdown-item" href="foscolo.html">Foscolo</a
+              ><a class="dropdown-item active" href="leopardi.html">Leopardi</a
+              ><a class="dropdown-item" href="manzoni.html">Manzoni</a
+              ><a class="dropdown-item" href="pascoli.html">Pascoli</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/geobrowser.html">Mappa e Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/voyant.html">Voyant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documentazione/documentazione.html">Documentazione</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html" title="Home">Home</a></li>
+        <li class="breadcrumb-item"><a href="leopardi.html" title="Home">Scheda Leopardi</a></li>
+        <li class="breadcrumb-item active">Testo</li>
+      </ol>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="row">
+        <nav class="col-md-12 col-lg-3 my-5 ml-lg-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="lessico">Lessico</label>
+            </div>
+            <select class="custom-select" id="lessico" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="minerale">minerale</option
+              ><option value="mitico">mitico</option
+              ></select
+            >
+          </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="personaggi" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="DANT">
+                Dante Alighieri </option
+              ><option value="PETR">
+                Francesco Petrarca </option
+              ><option value="ALFI">
+                Vittorio Alfieri
+              </option></select
+            >
+            <div class="input-group-append">
+              <label class="input-group-text" for="personaggi"
+                >Personaggi</label
+              >
+            </div>
+          </div>
+          <p class="text-muted my-2">* Verranno evidenziati i versi in cui il personaggio viene nominato, è soggetto grammaticale o prende la parola.</p>
+        </nav>
+        <section class="col-md-12 col-lg-6 my-5 ml-lg-5">
+          <h1>Ad Angelo Mai, strofe 5 e 11</h1>
+          <div id="testo">
+            <div class="my-5">
+              <p class="minerale">
+                Eran calde le tue ceneri sante, <span class="m-5">61</span>
+              </p>
+              <p class="DANT">non domito nemico <span class="m-5"></span></p>
+              <p class="">
+                della fortuna, al cui sdegno e dolore <span class="m-5"></span>
+              </p>
+              <p class="mitico">
+                fu pi&ugrave; l&rsquo;averno che la terra amico.
+                <span class="m-5"></span>
+              </p>
+              <p class="mitico">
+                L&rsquo;averno: e qual non &egrave; parte migliore
+                <span class="m-5"></span>
+              </p>
+              <p class="PETR">
+                di questa nostra? E le tue dolci corde <span class="m-5"></span>
+              </p>
+              <p class="PETR">susurravano ancora <span class="m-5"></span></p>
+              <p class="PETR">
+                dal tocco di tua destra, o sfortunato <span class="m-5"></span>
+              </p>
+              <p class="PETR">
+                amante. Ahi dal dolor comincia e nasce<span class="m-5"></span>
+              </p>
+              <p class="">
+                l&rsquo;italo canto. E pur men grava e morde
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                il mal che n&rsquo;addolora <span class="m-5"></span>
+              </p>
+              <p class="PETR">
+                del tedio che n&rsquo;affoga. Oh te beato,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                a cui fu vita il pianto! A noi le fasce
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                cinse il fastidio; a noi presso la culla
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                immoto siede, e su la tomba, il nulla. <span class="m-5"></span>
+              </p>
+            </div>
+            <div class="my-5">
+              <p class="">
+                Da te fino a quest&rsquo;ora uom non &egrave; sorto,
+                <span class="m-5">151</span>
+              </p>
+              <p class="ALFI">o sventurato ingegno, <span class="m-5"></span></p>
+              <p class="">
+                pari all&rsquo;italo nome, altro ch&rsquo;un solo,
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                solo di sua codarda etate indegno, <span class="m-5"></span>
+              </p>
+              <p class="ALFI">
+                allobrogo feroce, a cui dal polo <span class="m-5"></span>
+              </p>
+              <p class="">
+                maschia virt&uacute;, non gi&aacute; da questa mia
+                <span class="m-5"></span>
+              </p>
+              <p class="minerale">
+                stanca ed arida terra, <span class="m-5"></span>
+              </p>
+              <p class="ALFI">
+                venne nel petto; onde, privato, inerme,
+                <span class="m-5"></span>
+              </p>
+              <p class="ALFI">
+                (memorando ardimento!) in su la scena<span class="m-5"></span>
+              </p>
+              <p class="ALFI">
+                mosse guerra a&rsquo; tiranni: almen si dia
+                <span class="m-5"></span>
+              </p>
+              <p class="">questa misera guerra <span class="m-5"></span></p>
+              <p class="">
+                e questo vano campo all&rsquo;ire inferme
+                <span class="m-5"></span>
+              </p>
+              <p class="ALFI">
+                del mondo. Ei primo e sol dentro all&rsquo;arena
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                scese, e nullo il segu&iacute;, ch&eacute; l&rsquo;ozio e il
+                brutto <span class="m-5"></span>
+              </p>
+              <p class="">
+                silenzio or preme ai nostri innanzi a tutto.
+                <span class="m-5"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+         <div class="row">
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Alma Mater Studiorum<br>Scuola di Lettere e Beni Culturali</h6></li>
+               <li class="text-muted">Corso di Laurea Triennale in Lettere Moderne
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Valorizzare il sapere digitale:<br>un esperimento di progettazione</h6></li>
+               <li class="text-muted">Tesi di Laurea Triennale in Informatica Umanistica</li>
+               <li class="text-muted">Relatore: Prof.ssa Francesca Tomasi</li>
+               <li class="text-muted">Presentata da: Arcangelo Massari</li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Anno Accademico 2018/2019</h6></li>
+               <li class="text-muted">Sessione Seconda
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </footer>
+    <script>
+      function evidenzia() {
+        var lessicoSelezionato = $("#lessico").val();
+        var personaggioSelezionato = $("#personaggi").val();
+        $("p").css("background-color", "transparent");
+        if (lessicoSelezionato != "Scegli...") {
+          $("." + lessicoSelezionato).css("background-color", "#ccff99");
+        }
+        if (personaggioSelezionato != "Scegli...") {
+          $("." + personaggioSelezionato).css("background-color", "yellow");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Collezione digitale</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Home</a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              data-toggle="dropdown"
+            >
+              Autori
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="dante.html">Dante</a
+              ><a class="dropdown-item" href="petrarca.html">Petrarca</a
+              ><a class="dropdown-item" href="ariosto.html">Ariosto</a
+              ><a class="dropdown-item" href="tasso.html">Tasso</a
+              ><a class="dropdown-item active" href="foscolo.html">Foscolo</a
+              ><a class="dropdown-item" href="leopardi.html">Leopardi</a
+              ><a class="dropdown-item" href="manzoni.html">Manzoni</a
+              ><a class="dropdown-item" href="pascoli.html">Pascoli</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/geobrowser.html">Mappa e Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../servizi/voyant.html">Voyant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documentazione/documentazione.html">Documentazione</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html" title="Home">Home</a></li>
+        <li class="breadcrumb-item"><a href="foscolo.html" title="Home">Scheda Foscolo</a></li>
+        <li class="breadcrumb-item active">Testo</li>
+      </ol>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="row">
+        <nav class="col-md-12 col-lg-3 my-5 ml-lg-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="lessico">Lessico</label>
+            </div>
+            <select class="custom-select" id="lessico" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="animale">animale</option
+              ><option value="vegetale">vegetale</option>
+              <option value="minerale">minerale</option
+              ><option value="mitico">mitico</option
+              ><option value="celeste">celeste</option
+              ><option value="marino">marino</option
+              ><option value="città">città</option
+              ><option value="nazione">nazione</option
+              ><option value="montagna">montagna</option
+              ><option value="fiume">fiume</option
+              ><option value="isola">isola</option></select
+            >
+          </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="personaggi" onchange="evidenzia()"
+              ><option selected="selected">Scegli...</option
+              ><option value="DANT">
+                Dante Alighieri </option
+              ><option value="PETR">
+                Francesco Petrarca </option
+              ><option value="ALFI">
+                Vittorio Alfieri </option
+              ><option value="IPPO">
+                Ippolito Pindemonte </option
+              ><option value="AIAC">
+                Aiace Telamonio </option
+              ><option value="ACHI">
+                Achille
+              </option>
+              <option value="ULIS">Ulisse</option>
+              </select
+            >
+            <div class="input-group-append">
+              <label class="input-group-text" for="personaggi"
+                >Personaggi *</label
+              >
+            </div>
+          </div>
+          <p class="text-muted my-2">* Verranno evidenziati i versi in cui il personaggio viene nominato, è soggetto grammaticale o prende la parola.</p>
+        </nav>
+        <section class="col-md-12 col-lg-6 my-5 ml-lg-5">
+          <h1>Dei Sepolcri, vv. 173-225</h1>
+          <div id="testo">
+            <div class="my-5">
+              <p class="città">
+                E tu prima, Firenze, udivi il carme <span class="m-5">173</span>
+              </p>
+              <p class="DANT">
+                che allegr&ograve; l&rsquo;ira al Ghibellin fuggiasco,
+                <span class="m-5"></span>
+              </p>
+              <p class="PETR mitico">
+                d&egrave;sti a quel dolce di Calliope labbro,
+                <span class="m-5"></span>
+              </p>
+              <p class="città">
+                amore in Grecia nudo e nudo in Roma <span class="m-5"></span>
+              </p>
+              <p class="PETR">
+                d&rsquo;un velo candidissimo adornando,
+                <span class="m-5"></span>
+              </p>
+              <p class="PETR mitico">
+                rendea nel grembo a Venere Celeste; <span class="m-5"></span>
+              </p>
+              <p class="">
+                ma pi&ugrave; beata che in un tempio accolte
+                <span class="m-5"></span>
+              </p>
+              <p class="nazione">
+                serbi l&rsquo;Itale glorie, uniche forse
+                <span class="m-5"></span>
+              </p>
+              <p class="montagna">
+                da che le mal vietate Alpi e l&rsquo;alterna
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                onnipotenza delle umane sorti, <span class="m-5">183</span>
+              </p>
+              <p class="">
+                armi e sostanze t&rsquo;invadeano, ed are
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                e patria, e, tranne la memoria, tutto. <span class="m-5"></span>
+              </p>
+              <p class="">
+                Che ove speme di gloria agli animosi <span class="m-5"></span>
+              </p>
+              <p class="nazione">
+                intelletti rifulga ed all&rsquo;Italia,
+                <span class="m-5"></span>
+              </p>
+              <p class="minerale">
+                quindi trarrem gli auspici. E a questi marmi
+                <span class="m-5"></span>
+              </p>
+              <p class="ALFI">
+                venne spesso Vittorio ad ispirarsi, <span class="m-5"></span>
+              </p>
+              <p class="ALFI mitico">
+                irato a&rsquo; patrii Numi; errava muto
+                <span class="m-5"></span>
+              </p>
+              <p class="ALFI vegetale fiume celeste">
+                ove Arno &egrave; pi&ugrave; deserto, i campi e il cielo
+                <span class="m-5"></span>
+              </p>
+              <p class="ALFI">
+                des&icirc;oso mirando; e poi che nullo <span class="m-5"></span>
+              </p>
+              <p class="">
+                vivente aspetto gli molcea la cura, <span class="m-5">193</span>
+              </p>
+              <p class="ALFI">
+                qui posava l&rsquo;austero; e avea sul volto
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                il pallor della morte e la speranza. <span class="m-5"></span>
+              </p>
+              <p class="minerale">
+                Con questi grandi abita eterno: e l&rsquo;ossa
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                fremono amor di patria. Ah s&igrave;! da quella
+                <span class="m-5"></span>
+              </p>
+              <p class="mitico">
+                relig&iuml;osa pace un Nume parla: <span class="m-5"></span>
+              </p>
+              <p class="città">
+                e nutr&igrave;a contro a&rsquo; Persi in Maratona
+                <span class="m-5"></span>
+              </p>
+              <p class="città">
+                ove Atene sacr&ograve; tombe a&rsquo; suoi prodi,
+                <span class="m-5"></span>
+              </p>
+              <p class="marino">
+                la virt&ugrave; greca e l&rsquo;ira. Il navigante
+                <span class="m-5"></span>
+              </p>
+              <p class="marino isola">
+                che veleggi&ograve; quel mar sotto l&rsquo;Eubea,
+                <span class="m-5"></span>
+              </p>
+              <p class="celeste">
+                vedea per l&rsquo;ampia oscurit&agrave; scintille
+                <span class="m-5">203</span>
+              </p>
+              <p class="">
+                balenar d&rsquo;elmi e di cozzanti brandi,
+                <span class="m-5"></span>
+              </p>
+              <p class="minerale">
+                fumar le pire igneo vapor, corrusche <span class="m-5"></span>
+              </p>
+              <p class="minerale">
+                d&rsquo;armi ferree vedea larve guerriere
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                cercar la pugna; e all&rsquo;orror de&rsquo; notturni
+                <span class="m-5"></span>
+              </p>
+              <p class="vegetale">
+                silenzi si spandea lungo ne&rsquo; campi
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                di falangi un tumulto e un suon di tube
+                <span class="m-5"></span>
+              </p>
+              <p class="animale">
+                e un incalzar di cavalli accorrenti <span class="m-5"></span>
+              </p>
+              <p class="">
+                scalpitanti su gli elmi a&rsquo; moribondi,
+                <span class="m-5"></span>
+              </p>
+              <p class="mitico">
+                e pianto, ed inni, e delle Parche il canto.
+                <span class="m-5"></span>
+              </p>
+              <p class="marino IPPO">
+                Felice te che il regno ampio de&rsquo; venti,
+                <span class="m-5">213</span>
+              </p>
+              <p class="IPPO">
+                Ippolito, a&rsquo; tuoi verdi anni correvi!
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                E se il piloto ti drizz&ograve; l&rsquo;antenna
+                <span class="m-5"></span>
+              </p>
+              <p class="isola">
+                oltre l&rsquo;isole Eg&eacute;e, d&rsquo;antichi fatti
+                <span class="m-5"></span>
+              </p>
+              <p class="IPPO marino">
+                certo udisti suonar dell&rsquo;Ellesponto
+                <span class="m-5"></span>
+              </p>
+              <p class="marino">
+                i liti, e la marea mugghiar portando <span class="m-5"></span>
+              </p>
+              <p class="ACHI marino">
+                alle prode Ret&egrave;e l&rsquo;armi d&rsquo;Achille
+                <span class="m-5"></span>
+              </p>
+              <p class="AIAC minerale">
+                sovra l&rsquo;ossa d&rsquo;Ajace: a&rsquo; generosi
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                giusta di glorie dispensiera &egrave; morte:
+                <span class="m-5"></span>
+              </p>
+              <p class="">
+                n&egrave; senno astuto, n&egrave; favor di regi
+                <span class="m-5"></span>
+              </p>
+              <p class="ULIS">
+                all&rsquo;Itaco le spoglie ardue serbava,
+                <span class="m-5">223</span>
+              </p>
+              <p class="">
+                ch&egrave; alla poppa raminga le ritolse
+                <span class="m-5"></span>
+              </p>
+              <p class="marino mitico">
+                l&rsquo;onda incitata dagl&rsquo;inferni Dei
+                <span class="m-5"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+         <div class="row">
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Alma Mater Studiorum<br>Scuola di Lettere e Beni Culturali</h6></li>
+               <li class="text-muted">Corso di Laurea Triennale in Lettere Moderne
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Valorizzare il sapere digitale:<br>un esperimento di progettazione</h6></li>
+               <li class="text-muted">Tesi di Laurea Triennale in Informatica Umanistica</li>
+               <li class="text-muted">Relatore: Prof.ssa Francesca Tomasi</li>
+               <li class="text-muted">Presentata da: Arcangelo Massari</li>
+             </ul>
+           </div>
+           <div class="col-md-4 mb-5">
+             <ul class="list-unstyled list-spaced">
+               <li class="mb-2"><h6 class="text-uppercase">Anno Accademico 2018/2019</h6></li>
+               <li class="text-muted">Sessione Seconda
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </footer>
+    <script>
+      function evidenzia() {
+        var lessicoSelezionato = $("#lessico").val();
+        var personaggioSelezionato = $("#personaggi").val();
+        $("p").css("background-color", "transparent");
+        if (lessicoSelezionato != "Scegli...") {
+          $("." + lessicoSelezionato).css("background-color", "#ccff99");
+        }
+        if (personaggioSelezionato != "Scegli...") {
+          $("." + personaggioSelezionato).css("background-color", "yellow");
+        }
+      }
+    </script>
+  </body>
+</html>

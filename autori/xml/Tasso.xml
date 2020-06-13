@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<TEI>
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Gerusalemme Liberata, Proemio, vv. 1-40: un'edizione digitale</title>
+            <author>Torquato Tasso</author>
+         </titleStmt>
+         <extent>10 KB</extent>
+         <publicationStmt>
+            <distributor>Alma Mater Studiorum</distributor>
+            <pubPlace>Bologna</pubPlace>
+            <address>
+               <street>Via Zamboni 33</street>
+               <postCode>40126</postCode>
+            </address>
+            <date>2019-08-13</date>
+            <availability>
+               <p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni
+                  uso commerciale è vietato.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Gerusalemme liberata</title>
+                  <author>Torquato Tasso</author>
+                  <editor role="curatore">Caretti, Lanfranco</editor>
+                  <imprint>
+                     <pubPlace>Milano</pubPlace>
+                     <publisher>A. Mondadori</publisher>
+                     <date when="1992">1992</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <interpretation>
+              <p>Studio del lessico attinente alla natura</p>
+              <p>Studio dei riferimenti spaziali e temporali</p>
+              <p>Studio dei personaggi</p>
+           </interpretation>
+        </editorialDecl>
+        <projectDesc>
+           <p>Arricchire il testo di metainformazioni e visualizzarle, in particolare per quanto riguarda il lessico, i personaggi, il tempo e lo spazio.</p>
+        </projectDesc>
+        <tagsDecl>
+           <namespace name="http://www.tei-c.org/ns/1.0"><!--Inserire a posteriori i tag usati e le occurs="" -->
+              <tagUsage gi="lg">Marca un gruppo di versi, inteso sia come intera poesia che come singola strofa</tagUsage>
+              <tagUsage gi="head">Marca il titolo della singola poesia</tagUsage>
+              <tagUsage gi="l">Marca il singolo verso</tagUsage>
+              <tagUsage gi="name">Marca il lessico della natura e i nomi di persona. Per ulteriori specificazioni vedi la Reference System Declaration</tagUsage>
+              <tagUsage gi="placeName">Marca il nome di un luogo e contiene il tag settlement</tagUsage>
+              <tagUsage gi="country">Marca il tipo di uno stato</tagUsage>
+              <tagUsage gi="bloc">Marca il nome di un gruppo di stati</tagUsage>
+              <tagUsage gi="geogName">Marca un nome geografico</tagUsage>
+              <tagUsage gi="date">Marca una data</tagUsage>
+           </namespace>
+        </tagsDecl>
+        <refsDecl><!--Aggiungere a posteriori-->
+           <p>I versi delle terzine sono numerati con l'attributo <att>n</att>, che ricorre ogni tre versi</p>
+           <p>Il lessico del mondo naturale animale è indicato dal valore <val>animalNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale vegetale è indicato dal valore <val>vegetalNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale mitologico è indicato dal valore <val>mythNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale celeste è indicato dal valore <val>celestialNature</val> dell'attributo <att>type</att></p>
+           <p>Il lessico del mondo naturale marino è indicato dal valore <val>marineNature</val> dell'attributo <att>type</att></p>
+           <p>Il nome di uno stato è segnalato dal valore <val>country</val> dell'attributo <att>type</att></p>
+           <p>Il nome di una montagna è segnalato dal valore <val>mountain</val> dell`attributo <att>type</att></p>
+           <p>Ulteriori specificazioni sul tempo e sulle date sono forniti dall'indicazione del <val>tempo</val> data dall'attributo<att>when</att></p>
+        </refsDecl>
+     </encodingDesc>
+     <profileDesc>
+        <creation>La data di composizione dell'<title>Inferno</title> è incerta. Si suppone tra il <date from="1306" to="1309">1306 e il 1309</date>. Non c'è un luogo preciso: durante il suo esilio Dante fu itinerante.</creation>
+        <langUsage>
+           <language ident="it">Italiano</language>
+        </langUsage>
+        <particDesc>
+           <listPerson>
+              <person>
+                 <persName xml:id="GOFFR">
+                    <forename>Goffredo</forename>
+                    <surname>di Buglione</surname>
+                 </persName>
+              </person>
+              <person>
+                 <persName xml:id="GESU">Gesù</persName>
+              </person>
+              <person>
+                 <persName xml:id="MARI">Maria</persName>
+              </person>
+              <person>
+                 <persName xml:id="ALFO">
+                    <forename>Alfonso II</forename>
+                    <surname>d'Este</surname>
+                 </persName>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+     <revisionDesc>
+        <change when="2019-07-02">Aggiunta di informazioni sulle finalità del progetto</change>
+     </revisionDesc>
+  </teiHeader>
+   <text xml:lang="it">
+      <body>
+         <head>Gerusalemme Liberata, Proemio, vv. 1-40</head>
+         <lg type="ottava">
+            <l>Canto l'arme pietose e 'l <name ref="#GOFFR">capitano</name>; </l>
+            <l>che 'l gran 
+	            <placeName>
+		            <settlement type="city">
+			            sepolcro
+		            </settlement>
+	            </placeName> <date when="1099">liberò</date> di <name ref="#GESU">Cristo</name>. </l>
+            <l>Molto egli oprò co 'l senno e con la mano, </l>
+            <l>molto soffrì nel glorioso acquisto; </l>
+            <l>e in van l'<name type="mythNature">Inferno</name> vi s'oppose, e in vano </l>
+            <l>s'armò 
+            	<placeName>
+            		<bloc type="continent">
+            			d'Asia
+            		</bloc>
+           		</placeName> 
+            e di 
+            <placeName>
+            	<country type="nation">
+            		Libia
+            	</country>
+            </placeName>
+            il popol misto. </l>
+            <l>Il Ciel gli diè favore, e sotto a i santi </l>
+            <l n="8">segni ridusse i suoi compagni erranti. </l>
+         </lg>
+         <lg type="ottava">
+            <l>O <name ref="#MARI" type="mythNature">Musa</name>, tu che di caduchi <name type="vegetalNature">allori</name> </l>
+            <l>non circondi la fronte in <geogName type="mountain">Elicona</geogName> </l>
+            <l>ma su nel cielo infra i beati cori </l>
+            <l>hai di <name type="celestialNature">stelle immortali</name> aurea corona, </l>
+            <l>tu spira al petto mio celesti ardori, </l>
+            <l>tu rischiara il mio canto, e tu perdona </l>
+            <l>s'intesso fregi al ver, s'adorno in parte </l>
+            <l n="16">d'altri diletti, che de' tuoi le carte. </l>
+         </lg>
+         <lg type="ottava">
+            <l>Sai che là corre il mondo ove più versi </l>
+            <l>di sue dolcezze il lusinghier <geogName type="mountain">Parnaso</geogName>, </l>
+            <l>e che 'l vero, condito in molli versi, </l>
+            <l>i più schivi allettando ha persuaso. </l>
+            <l>Così a l'egro fanciul porgiamo aspersi </l>
+            <l>di soavi licor gli orli del vaso: </l>
+            <l>succhi amari ingannato intanto ei beve, </l>
+            <l n="24">e da l'inganno suo vita riceve. </l>
+         </lg>
+         <lg type="ottava">
+            <l>Tu, magnanimo <name ref="#ALFO">Alfonso</name>, il qual ritogli </l>
+            <l>al furor di <name type="marineNature">fortuna</name> e guidi in <name type="marineNature">porto</name> </l>
+            <l>me peregrino errante, e fra gli <name type="marineNature">scogli</name> </l>
+            <l>e fra l'<name type="marineNature">onde</name> agitato e quasi absorto, </l>
+            <l>queste mie carte in lieta fronte accogli, </l>
+            <l>che quasi in voto a te sacrate i' porto </l>
+            <l>Forse un dì fia che la presaga penna </l>
+            <l n="32">osi scriver di te quel ch'or n'accenna. </l>
+         </lg> 
+         <lg type="ottava">
+            <l>E' ben ragion, s'egli averrà ch'in pace </l>
+            <l>il buon popol di <name ref="#GESU">Cristo</name> unqua si veda, </l>
+            <l>e con <name type="marineNature">navi</name> e <name type="animalNature">cavalli</name> al fero Trace </l>
+            <l>cerchi ritòr la grande ingiusta <placeName><settlement type="city">preda</settlement></placeName>, </l>
+            <l>ch'a te lo scettro in terra o, se ti piace, </l>
+            <l>l'alto imperio de' <name type="marineNature">mari</name> a te conceda. </l>
+            <l>Emulo di <name ref="#GOFFR">Goffredo</name>, i nostri carmi </l>
+            <l n="40">intanto ascolta, e t'apparecchia a l'armi. </l>
+         </lg>   
+      </body>
+  </text>
+</TEI>

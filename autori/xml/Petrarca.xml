@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<TEI>
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Rerum Vulgarium Fragmenta, 336: un'edizione digitale</title>
+            <author>Francesco Petrarca</author>
+         </titleStmt>
+         <extent>10 KB</extent>
+         <publicationStmt>
+            <distributor>Alma Mater Studiorum</distributor>
+            <pubPlace>Bologna</pubPlace>
+            <address>
+               <street>Via Zamboni 33</street>
+               <postCode>40126</postCode>
+            </address>
+            <date>2019-08-11</date>
+            <availability>
+               <p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni
+                  uso commerciale è vietato.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Canzoniere</title>
+                  <author>Francesco Petrarca</author>
+                  <editor role="curatore">Contini, Gianfranco</editor>
+                  <imprint>
+                     <pubPlace>Torino</pubPlace>
+                     <publisher>Einaudi</publisher>
+                     <date when="1994">1992</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <interpretation>
+              <p>Studio del lessico attinente alla natura</p>
+              <p>Studio dei riferimenti spaziali e temporali</p>
+              <p>Studio dei personaggi</p>
+           </interpretation>
+        </editorialDecl>
+        <projectDesc>
+           <p>Arricchire il testo di metainformazioni e visualizzarle, in particolare per quanto riguarda il lessico, i personaggi, il tempo e lo spazio.</p>
+        </projectDesc>
+        <tagsDecl>
+           <namespace name="http://www.tei-c.org/ns/1.0"><!--Inserire a posteriori i tag usati e le occurs="" -->
+              <tagUsage gi="lg">Marca un gruppo di versi, inteso sia come intera poesia che come singola strofa</tagUsage>
+              <tagUsage gi="head">Marca il titolo della singola poesia</tagUsage>
+              <tagUsage gi="l">Marca il singolo verso</tagUsage>
+              <tagUsage gi="name">Marca il lessico della natura e i nomi di persona. Per ulteriori specificazioni vedi la Reference System Declaration</tagUsage>
+              <tagUsage gi="date">Marca una data</tagUsage>
+           </namespace>
+        </tagsDecl>
+        <refsDecl><!--Aggiungere a posteriori-->
+           <p>I versi delle terzine sono numerati con l'attributo <att>n</att>, che ricorre ogni tre versi</p>
+           <p>Il lessico del mondo naturale mitologico è indicato dal valore <val>mythNature</val> dell'attributo <att>type</att></p>
+           <p>Ulteriori specificazioni sul tempo e sulle date sono forniti dall'indicazione del <val>tempo</val> data dall'attributo<att>when</att></p>
+        </refsDecl>
+     </encodingDesc>
+     <profileDesc>
+        <creation>La composizione del <title>Rerum Vulgarium Fragmenta</title> accompagna l'intera vita del Poeta. Il manoscritto definitivo, il Vat. Lat. 3195, è datato <date from="1336" to="1374">1336-1374</date>.</creation>
+        <langUsage>
+           <language ident="it">Italiano</language>
+        </langUsage>
+        <particDesc>
+           <listPerson>
+              <person>
+                 <persName>
+                    <forename>Laura</forename>
+                 </persName>
+              </person>
+              <person>
+                 <persName>
+                    <forename>Francesco</forename>
+                    <surname>Petrarca</surname>
+                 </persName>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+     <revisionDesc>
+        <change when=""></change>
+     </revisionDesc>
+  </teiHeader>
+   <text xml:lang="it">
+      <body>
+         <head>Rerum Vulgarium Fragmenta, 336</head>
+         <lg type="quartina">
+            <l>Tornami a mente, anzi v' è dentro, quella </l>
+            <l>ch' indi per <name type="mythNature">Lethe</name> esser non pò sbandita, </l>
+            <l>qual io la vidi in su l' età fiorita, </l>
+            <l>tutta accesa de' raggi di sua stella. </l>
+         </lg>
+         <lg type="quartina">
+            <l n="5">Sí nel mio primo occorso honesta et bella </l>
+            <l>veggiola, in sé raccolta, et sí romita, </l>
+            <l>ch' i' grido: –Ell' è ben dessa; anchor è in vita–, </l>
+            <l>e 'n don le cheggio sua dolce favella. </l>
+         </lg>
+         <lg type="terzina">
+            <l>Talor risponde, et talor non fa motto.</l>
+            <l n="10">I' come huom ch' erra, et poi piú dritto estima, </l>
+            <l>dico a la mente mia: –Tu se' 'ngannata. </l>
+         </lg>
+         <lg type="terzina">
+            <l>Sai che 'n <date when="1348-06-06T06:00:00">mille trecento quarantotto</date>, </l>
+            <l>il dí sesto d' aprile, in l' ora prima, </l>
+            <l>del corpo uscío quell' anima beata.– </l>
+         </lg>
+      </body>
+  </text>
+</TEI>
