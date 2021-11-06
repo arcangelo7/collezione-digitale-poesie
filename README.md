@@ -6,7 +6,7 @@ Alla base di questo studio vi è il progetto per una collezione digitale di poes
 
 - 	Dante, *Inferno, XXI*, vv. 66-115
 - 	Petrarca, *Rerum Vulgarium Fragmenta*, 336
-- 	Ariosto, **Orlando Furioso*, *Proemio*, vv. 1-32
+- 	Ariosto, *Orlando Furioso*, *Proemio*, vv. 1-32
 - 	Tasso, *Gerusalemme Liberata*, vv. 1-40
 - 	Foscolo, *Dei sepolcri*, 174-225
 - 	Manzoni, *Inni e Odi*, *Il cinque maggio*, vv. 1-48
