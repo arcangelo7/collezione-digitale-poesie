@@ -1,4 +1,4 @@
-# Collezione digitale di poesia
+# Collezione digitale di poesie
 
 Alla base di questo studio vi è il progetto per una collezione digitale di poesie. Attraverso **otto componimenti** rappresentativi dell’intero sviluppo della **Letteratura italiana** dal Trecento al Novecento, si esplorano nuove prospettive di visualizzazione, fruizione e analisi dei testi, mettendo a frutto le possibilità offerte dalla computer science.
 
